@@ -851,3 +851,15 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* ********* AKTUALNOSCI ****************** */
+
+.posts-box {
+  margin-top: 8rem;
+}
+
+/* ********* POST ****************** */
+
+.post-box {
+  margin-top: 8rem;
+}

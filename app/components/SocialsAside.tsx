@@ -1,7 +1,6 @@
 import IMGinsta from "@/public/instagramLogo.png";
 import IMGtiktok from "@/public/tiktokLogo.png";
 import IMGface from "@/public/facebookLogo.png";
-import IMGCallendar from "@/public/calendaricon.png";
 import Link from "next/link";
 import Image from "next/image";
 import FadeDelay from "../UI/FadeDelay";
