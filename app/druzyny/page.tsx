@@ -1,0 +1,73 @@
+import Link from "next/link";
+import KVdruzyny from "@/public/bg-teams.jpg";
+import KVchlopaki from "@/public/bg-boy.jpg";
+import KVdziewczyny from "@/public/bg-girl.jpg";
+import Image from "next/image";
+import MainPartners from "../components/MainPartners";
+import MainSocial from "../components/MainSocial";
+import FadeIn from "../UI/FadeIn";
+import ScrollUp from "../UI/ScrollUp";
+
+function page() {
+  return (
+    <>
+      <FadeIn>
+        <section className="grid justify-center gap-8 items-center page_teams overflow-hidden relative">
+          <h1 className="text-center">Drużyny</h1>
+          <Image
+            src={KVdruzyny}
+            alt="Drużyny zespołu UKS Rusiec"
+            fill
+            className="object-cover object-top -z-10 "
+          />
+        </section>
+      </FadeIn>
+      <MainPartners />
+      <ScrollUp>
+        <section className="container page_teams-copy">
+          <h2 className="section_h2">Poznaj nasze drużyny</h2>
+          <p>
+            UKS Rusiec to miejsce, gdzie pasja do piłki ręcznej łączy zawodników
+            i zawodniczki w silne, zgrane zespoły. Niezależnie od tego, czy
+            kibicujesz chłopakom czy dziewczynom - tu znajdziesz sportowe
+            emocje, sukcesy i prawdziwego ducha rywalizacji.
+          </p>
+          <h3 className="section_h3">
+            Wybierz drużynę i zobacz, kto gra z sercem dla UKS Rusiec!
+          </h3>
+        </section>
+      </ScrollUp>
+      <FadeIn>
+        <section className="page_teams-teamsbox">
+          <Link href="/druzyny/chlopcy" className="overflow-hidden">
+            <div className="page_teams-team boys relative">
+              <p className="pageToTeam_link">Chłopcy</p>
+
+              <Image
+                src={KVchlopaki}
+                alt="Szczypiornista zespołu UKS wykonujący rzut"
+                fill
+                className="object-cover object-top -z-10"
+              />
+            </div>
+          </Link>
+          <Link href="/druzyny/dziewczyny" className="overflow-hidden">
+            <div className="page_teams-team girls relative">
+              <p className="pageToTeam_link">Dziewczyny</p>
+              <Image
+                src={KVdziewczyny}
+                alt="Szczypiornistka zespołu UKS wykonująca rzut"
+                fill
+                className="object-cover object-top -z-10"
+              />
+            </div>
+          </Link>
+        </section>
+      </FadeIn>
+
+      <MainSocial />
+    </>
+  );
+}
+
+export default page;
