@@ -1,6 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
-function HeaderReveal({ children }) {
+import { ReactNode, useEffect, useState } from "react";
+
+type HeaderRevealProps = {
+  children: ReactNode;
+};
+
+function HeaderReveal({ children }: HeaderRevealProps) {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 

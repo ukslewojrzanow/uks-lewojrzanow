@@ -3,7 +3,20 @@ import Image from "next/image";
 import Avatar from "@/public/player-boy.png";
 import { useState } from "react";
 
-function MapBoys({ boys, divisions }) {
+type Boys = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  position: string;
+  division: string;
+};
+
+type MapBoysProps = {
+  boys: Boys[];
+  divisions: string[];
+};
+
+function Mapboys({ boys, divisions }: MapBoysProps) {
   const [isDivision, setIsDivision] = useState("Wszyscy");
 
   let theBoys = boys;
@@ -12,29 +25,34 @@ function MapBoys({ boys, divisions }) {
     theBoys = theBoys.filter((player) => player.division === isDivision);
   }
 
+  const handleDivisionClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const target = e.target as HTMLButtonElement;
+    setIsDivision(target.value);
+  };
+
   return (
     <div className="playersmap_section">
       <div className="container">
         <div className="team_divisions">
-          <h2 className="section_h2 text-center">Dywizje:</h2>
+          <h2 className="section_h2">Dywizje:</h2>
           <div className="team_division-box">
             <button
-              className={` team_division-btn ${
-                isDivision === "Wszyscy" && "team_division-btn-active"
+              className={`team_division-btn ${
+                isDivision === "Wszyscy" ? "team_division-btn-active" : ""
               }`}
               value={"Wszyscy"}
               onClick={() => setIsDivision("Wszyscy")}
             >
               Wszyscy
             </button>
-            {divisions.map((division) => (
+            {divisions.map((division: string) => (
               <button
                 className={`uppercase team_division-btn ${
-                  isDivision === division && "team_division-btn-active"
+                  isDivision === division ? "team_division-btn-active" : ""
                 }`}
                 key={division}
                 value={division}
-                onClick={(e) => setIsDivision(e.target.value)}
+                onClick={handleDivisionClick}
               >
                 {division}
               </button>
@@ -57,4 +75,4 @@ function MapBoys({ boys, divisions }) {
   );
 }
 
-export default MapBoys;
+export default Mapboys;

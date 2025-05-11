@@ -3,7 +3,20 @@ import Image from "next/image";
 import Avatar from "@/public/player-girl.png";
 import { useState } from "react";
 
-function MapGirls({ girls, divisions }) {
+type Girl = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  position: string;
+  division: string;
+};
+
+type MapGirlsProps = {
+  girls: Girl[];
+  divisions: string[];
+};
+
+function MapGirls({ girls, divisions }: MapGirlsProps) {
   const [isDivision, setIsDivision] = useState("Wszyscy");
 
   let theGirls = girls;
@@ -12,6 +25,11 @@ function MapGirls({ girls, divisions }) {
     theGirls = theGirls.filter((player) => player.division === isDivision);
   }
 
+  const handleDivisionClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const target = e.target as HTMLButtonElement;
+    setIsDivision(target.value);
+  };
+
   return (
     <div className="playersmap_section">
       <div className="container">
@@ -19,22 +37,22 @@ function MapGirls({ girls, divisions }) {
           <h2 className="section_h2">Dywizje:</h2>
           <div className="team_division-box">
             <button
-              className={` team_division-btn ${
-                isDivision === "Wszyscy" && "team_division-btn-active"
+              className={`team_division-btn ${
+                isDivision === "Wszyscy" ? "team_division-btn-active" : ""
               }`}
               value={"Wszyscy"}
               onClick={() => setIsDivision("Wszyscy")}
             >
               Wszyscy
             </button>
-            {divisions.map((division) => (
+            {divisions.map((division: string) => (
               <button
                 className={`uppercase team_division-btn ${
-                  isDivision === division && "team_division-btn-active"
+                  isDivision === division ? "team_division-btn-active" : ""
                 }`}
                 key={division}
                 value={division}
-                onClick={(e) => setIsDivision(e.target.value)}
+                onClick={handleDivisionClick}
               >
                 {division}
               </button>

@@ -1,6 +1,12 @@
 import { Fade } from "react-awesome-reveal";
 
-function FadeIn({ children }) {
+import { ReactNode } from "react";
+
+type Props = {
+  children: ReactNode;
+};
+
+function FadeIn({ children }: Props) {
   return <Fade triggerOnce>{children}</Fade>;
 }
 
