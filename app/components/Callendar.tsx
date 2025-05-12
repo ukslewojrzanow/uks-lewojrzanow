@@ -3,6 +3,8 @@ import IMGCallendar from "@/public/calendaricon.png";
 import Image from "next/image";
 import { useState } from "react";
 import ReactCalendar from "./ReactCalendar";
+import Calendar from "./Calendar";
+
 function Callendar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -20,7 +22,9 @@ function Callendar() {
           className="calendar-box
         "
         >
-          <ReactCalendar />
+          <ReactCalendar>
+            <Calendar />
+          </ReactCalendar>
         </div>
       )}
     </>

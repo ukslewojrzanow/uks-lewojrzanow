@@ -4,7 +4,8 @@ import IMGface from "@/public/facebookLogo.png";
 import Link from "next/link";
 import Image from "next/image";
 import FadeDelay from "../UI/FadeDelay";
-import Callendar from "./Callendar";
+
+import Calendar from "./Calendar";
 
 function SocialsAside() {
   return (
@@ -12,7 +13,7 @@ function SocialsAside() {
       <ul className="grid gap-4">
         <FadeDelay>
           <li>
-            <Callendar />
+            <Calendar />
           </li>
         </FadeDelay>
         <FadeDelay>

@@ -168,6 +168,11 @@ p {
   background-color: #adcc65 !important;
 }
 
+.react-calendar_event {
+  background-color: rgba(254, 254, 254, 0.8) !important;
+  color: #1c1a1b !important;
+}
+
 @media (max-width: 50em) {
   .react-calendar {
     width: 25rem !important;

@@ -1,12 +1,16 @@
 // "use client";
 import "react-calendar/dist/Calendar.css";
 // import { useState } from "react";
-import Calendar from "react-calendar";
+// import Calendar from "react-calendar";
 
-function ReactCalendar() {
-  // const [value, onChange] = useState(new Date());
-  return <Calendar value={new Date()} minDate={new Date()} />;
-  // return <Calendar onChange={onChange} value={value} minDate={new Date()} />;
+import { ReactNode } from "react";
+
+type Props = {
+  children: ReactNode;
+};
+function ReactCalendar({ children }: Props) {
+  // return <Calendar />;
+  return <div>{children}</div>;
 }
 
 export default ReactCalendar;
