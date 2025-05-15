@@ -38,7 +38,7 @@ export default function MainHero() {
         <div className="hero_copy-box">
           <h1 className=" hero_h1">UKS RUSIEC</h1>
           <h2 className="hero_h2">
-            Klub sportowy z sekcją piłki ręcznej kobiet i mężczyzn
+            Klub sportowy z sekcją piłki ręcznej dziewcząt i chłopców
           </h2>
           <div className="hero_btn-box">
             <Link href="/#aktualnosci" className="hero_btn-1">

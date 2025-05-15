@@ -3,7 +3,6 @@ import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
 
 import { client } from "@/sanity/client";
-import Calendar from "../components/Calendar";
 
 const EVENTS_QUERY = `*[
   _type == "event"
@@ -32,7 +31,6 @@ async function page() {
           </li>
         ))}
       </ul>
-      <Calendar />
     </div>
   );
 }

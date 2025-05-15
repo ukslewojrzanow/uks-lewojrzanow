@@ -79,9 +79,6 @@ export default function SanityCalendar({ events }: Props) {
 
           {selectedDate && (
             <div className="">
-              <h3 className="">
-                Wydarzenia w dniu {selectedDate.toLocaleDateString()}:
-              </h3>
               {eventsForSelectedDate.length > 0 ? (
                 <ul className="space-y-2">
                   {eventsForSelectedDate.map((event) => (
