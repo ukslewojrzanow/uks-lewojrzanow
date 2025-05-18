@@ -30,25 +30,28 @@ export default async function PostPage({
     : null;
 
   return (
-    <div className="container post-box">
-      <Link href="/" className="hover:underline">
-        ← Wróć do aktualności
-      </Link>
+    <div className="container post-box min-h-[90vh]">
+      <div className="comeback">
+        <Link href="/aktualnosci" className="hover:underline comeback">
+          ← Wróć do aktualności
+        </Link>
+      </div>
       {postImageUrl && (
         <Image
           src={postImageUrl}
           alt={post.title}
-          className=" rounded-xl"
           width="550"
           height="310"
           quality={100}
         />
       )}
-      <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
+
       <div className="prose">
-        <p>Opublikowano: {new Date(post.publishedAt).toLocaleDateString()}</p>
         {Array.isArray(post.body) && <PortableText value={post.body} />}
       </div>
+      <p className="posts-date">
+        Opublikowano: {new Date(post.publishedAt).toLocaleDateString()}
+      </p>
     </div>
   );
 }

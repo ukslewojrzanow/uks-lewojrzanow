@@ -18,16 +18,24 @@ export default async function EventPage({
   );
 
   return (
-    <div className="container posts-box">
-      <Link href="/" className="hover:underline">
-        ← Wróć
-      </Link>
-      <p>{new Date(event.date).toLocaleDateString()}</p>
-      <h1 className="text-4xl font-bold mb-8">{event.title}</h1>
-      <div className="prose">
-        <p>{event.description}</p>
-        <p>Lokalizacja: {event.location}</p>
+    <section className="min-h-[95vh]">
+      <div className="container calendar-event-page">
+        <div className="comeback">
+          <Link href="/kalendarz" className="hover:underline">
+            ← Pełen kalendarz
+          </Link>
+        </div>
+        <div className="text-box">
+          <h2 className="section_h2">{event.title}</h2>
+          <div className="prose">
+            <h3 className="section_h4">
+              {new Date(event.date).toLocaleDateString()}
+            </h3>
+            <p>{event.description}</p>
+            <h4 className="section_h3">Lokalizacja: {event.location}</h4>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

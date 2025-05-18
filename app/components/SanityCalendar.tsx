@@ -83,14 +83,23 @@ export default function SanityCalendar({ events }: Props) {
                 <ul className="space-y-2">
                   {eventsForSelectedDate.map((event) => (
                     <li key={event._id}>
-                      <Link href={`/kalendarz/${event.slug.current}`}>
-                        <div className="">{event.title}</div>
+                      <Link
+                        href={`/kalendarz/${event.slug.current}`}
+                        className="h-full w-full"
+                      >
+                        <div className="calendar-link-box">
+                          <p>
+                            {event.title} {"->"}
+                          </p>
+                        </div>
                       </Link>
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p>Brak wydarzeń w tym dniu</p>
+                <div className="calendar-link-box">
+                  <p>Brak wydarzeń w tym dniu</p>
+                </div>
               )}
             </div>
           )}

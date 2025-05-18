@@ -173,6 +173,42 @@ p {
   color: #1c1a1b !important;
 }
 
+.react-calendar_event:active {
+  background-color: rgba(254, 254, 254) !important;
+}
+
+.calendar-link-box {
+  background-color: var(--font-color);
+  color: var(--background-color);
+}
+.calendar-link-box p {
+  font-weight: 600;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.calendar-page {
+  margin-top: 12.8rem;
+}
+.calendar-page-list {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.calendar-event-page {
+  margin-top: 8rem;
+}
+.calendar-event-page .comeback {
+  font-size: 1.8rem;
+  padding-top: 4.2rem;
+}
+
+.calendar-event-page .text-box {
+  padding: 3.2rem;
+}
+
 @media (max-width: 50em) {
   .react-calendar {
     width: 25rem !important;
@@ -322,11 +358,13 @@ p {
   filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.4));
   text-transform: uppercase;
 }
-.hero_h1 {
+.hero_h1,
+.hero_h1-long {
   font-size: 7.2rem;
   font-weight: 700;
   letter-spacing: -0.4rem;
 }
+
 .hero_h2 {
   font-size: 4.2rem;
   font-weight: 600;
@@ -859,12 +897,90 @@ p {
 
 /* ********* AKTUALNOSCI ****************** */
 
-.posts-box {
-  margin-top: 8rem;
+.posts-grid {
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+.posts-textbox {
+  padding: 0.4rem 1.2rem;
+}
+
+.posts-date {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 75em) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 30em) {
+  .page_teams h1 {
+    font-size: 5.2rem;
+  }
+}
+@media (max-width: 22em) {
+  .page_teams h1 {
+    font-size: 4.2rem;
+  }
 }
 
 /* ********* POST ****************** */
 
 .post-box {
   margin-top: 8rem;
+}
+
+.comeback {
+  margin: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.post-box .posts-date {
+  margin-top: 3.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.post-box .prose {
+  padding: 0.6rem;
+}
+
+.prose h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.prose h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+
+.prose h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+.prose h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.prose blockquote {
+  font-size: 1.4rem;
+  padding: 0 0.6rem;
+}
+.prose p {
+  font-size: 1.6rem;
+  padding: 0 1.2rem;
+  text-align: justify;
 }
