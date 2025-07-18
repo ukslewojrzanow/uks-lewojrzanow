@@ -2,37 +2,48 @@
 import Image from "next/image";
 import Avatar from "@/public/player-girl.png";
 import { useState } from "react";
+import { urlFor } from "@/sanity/client";
 
-type Girl = {
-  id: number;
-  firstName: string;
-  lastName: string;
-  position: string;
+type Players = {
+  _id: string;
+  title: string;
+  slug: { current: string };
   division: string;
+  gender: string;
+  name: string;
+  position: string;
+  number: string;
+  // image: string;
+  image: {
+    _type: "image";
+    asset: {
+      _ref: string;
+      _type: "reference";
+    };
+  };
+  publishedAt: Date;
 };
 
-type MapGirlsProps = {
-  girls: Girl[];
-  divisions: string[];
+type Props = {
+  players: Players[];
 };
 
-function MapGirls({ girls, divisions }: MapGirlsProps) {
+function MapGirls({ players }: Props) {
   const [isDivision, setIsDivision] = useState("Wszyscy");
-
-  let theGirls = girls;
-
-  if (isDivision !== "Wszyscy") {
-    theGirls = theGirls.filter((player) => player.division === isDivision);
-  }
 
   const handleDivisionClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     const target = e.target as HTMLButtonElement;
     setIsDivision(target.value);
   };
+  const divisionsAPI = [...new Set(players.map((div): string => div.division))];
+
+  if (isDivision !== "Wszyscy") {
+    players = players.filter((player) => player.division === isDivision);
+  }
 
   return (
     <div className="playersmap_section">
-      <div className="container">
+      <div className="container min-h-[80vh]">
         <div className="team_divisions">
           <h2 className="section_h2">Dywizje:</h2>
           <div className="team_division-box">
@@ -45,7 +56,7 @@ function MapGirls({ girls, divisions }: MapGirlsProps) {
             >
               Wszyscy
             </button>
-            {divisions.map((division: string) => (
+            {divisionsAPI.map((division: string) => (
               <button
                 className={`uppercase team_division-btn ${
                   isDivision === division ? "team_division-btn-active" : ""
@@ -60,15 +71,35 @@ function MapGirls({ girls, divisions }: MapGirlsProps) {
           </div>
         </div>
         <div className="team_map">
-          {theGirls.map((girl) => (
-            <div className="player-box" key={girl.id}>
-              <Image src={Avatar} alt="Avatar" />
-              <p>{girl.firstName}</p>
-              <p>{girl.lastName}</p>
-              <p>Numer: {girl.id}</p>
-              <p>Pozycja: {girl.position}</p>
-            </div>
-          ))}
+          {players
+            .filter((player) => player.gender === "dziewczyna")
+            .map((player) => {
+              const assetUrl = player.image?.asset?._ref
+                ? urlFor(player.image).width(300).height(300).url()
+                : null;
+              return (
+                <div className="player-box" key={player._id}>
+                  {assetUrl ? (
+                    <Image
+                      src={assetUrl}
+                      width={300}
+                      height={300}
+                      alt={player.name}
+                    />
+                  ) : (
+                    <Image
+                      src={Avatar}
+                      width={300}
+                      height={300}
+                      alt="Domyślny Avatar"
+                    />
+                  )}
+                  <p>{player.name}</p>
+                  <p>Numer: {player.number}</p>
+                  <p>Pozycja: {player.position}</p>
+                </div>
+              );
+            })}
         </div>
       </div>
     </div>

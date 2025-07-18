@@ -1,8 +1,16 @@
+import imageUrlBuilder from "@sanity/image-url";
+import type { Image } from "sanity";
 import { createClient } from "next-sanity";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 export const client = createClient({
-  projectId: "dc1lerta",
+  projectId: "5hjigftq",
   dataset: "production",
   apiVersion: "2024-01-01",
   useCdn: false,
 });
+const builder = imageUrlBuilder(client);
+// Funkcja do konwertowania obrazu Sanity na URL
+export function urlFor(source: Image | SanityImageSource) {
+  return builder.image(source);
+}
