@@ -314,6 +314,11 @@ p {
   z-index: -1;
 }
 
+.mob-nav_underline {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid #fefefe;
+}
+
 /* ************* HOME PAGE  ************** */
 
 /* HOME HERO */

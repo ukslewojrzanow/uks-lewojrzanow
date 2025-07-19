@@ -27,7 +27,7 @@ function NavMobile() {
             <li>
               <Link
                 href="/"
-                className={`${pathname === "/" && "nav_underline"}`}
+                className={`${pathname === "/" && "mob-nav_underline "}`}
               >
                 Strona główna
               </Link>
@@ -35,7 +35,7 @@ function NavMobile() {
             <li>
               <Link
                 href="/aktualnosci"
-                className={`${pathname === "/aktualnosci" && "nav_underline"}`}
+                className={`${pathname === "/aktualnosci" && "mob-nav_underline "}`}
               >
                 Aktualności
               </Link>
@@ -43,7 +43,7 @@ function NavMobile() {
             <li>
               <Link
                 href="/druzyny"
-                className={`${pathname === "/druzyny" && "nav_underline"}`}
+                className={`${pathname === "/druzyny" && "mob-nav_underline "}`}
               >
                 Drużyny
               </Link>
@@ -51,7 +51,7 @@ function NavMobile() {
             <li>
               <Link
                 href="/partnerzy"
-                className={`${pathname === "/partnerzy" && "nav_underline"}`}
+                className={`${pathname === "/partnerzy" && "mob-nav_underline "}`}
               >
                 Partnerzy
               </Link>
@@ -59,7 +59,7 @@ function NavMobile() {
             <li>
               <Link
                 href="/kontakt"
-                className={`${pathname === "/kontakt" && "nav_underline"}`}
+                className={`${pathname === "/kontakt" && "mob-nav_underline "}`}
               >
                 Kontakt
               </Link>
