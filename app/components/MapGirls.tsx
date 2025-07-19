@@ -69,7 +69,7 @@ function MapGirls({ players }: Props) {
                 value={division}
                 onClick={handleDivisionClick}
               >
-                {division}
+                U{division}
               </button>
             ))}
           </div>

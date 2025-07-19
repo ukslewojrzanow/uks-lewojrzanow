@@ -40,6 +40,7 @@ function MapBoys({ players }: Props) {
   if (isDivision !== "Wszyscy") {
     players = players.filter((player) => player.division === isDivision);
   }
+  console.log(players);
 
   return (
     <div className="playersmap_section">
@@ -69,7 +70,7 @@ function MapBoys({ players }: Props) {
                 value={division}
                 onClick={handleDivisionClick}
               >
-                {division}
+                U{division}
               </button>
             ))}
           </div>
