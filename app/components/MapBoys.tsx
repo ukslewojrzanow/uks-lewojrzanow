@@ -48,18 +48,22 @@ function MapBoys({ players }: Props) {
           <h2 className="section_h2">Dywizje:</h2>
           <div className="team_division-box">
             <button
-              className={`team_division-btn ${
-                isDivision === "Wszyscy" ? "team_division-btn-active" : ""
+              className={` ${
+                isDivision === "Wszyscy"
+                  ? "team_division-btn-active"
+                  : "team_division-btn"
               }`}
               value={"Wszyscy"}
               onClick={() => setIsDivision("Wszyscy")}
             >
               Wszyscy
             </button>
-            {divisionsAPI.map((division: string) => (
+            {divisionsAPI.sort().map((division: string) => (
               <button
-                className={`uppercase team_division-btn ${
-                  isDivision === division ? "team_division-btn-active" : ""
+                className={`uppercase ${
+                  isDivision === division
+                    ? "team_division-btn-active"
+                    : "team_division-btn"
                 }`}
                 key={division}
                 value={division}

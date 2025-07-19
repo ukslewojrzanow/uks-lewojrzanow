@@ -29,7 +29,7 @@ function MainTeams() {
                 Poznaj nasze sekcje męskie i żeńskie, zobacz kto gra z sercem i
                 zostawia wszystko na boisku.
               </p>
-              <Link href="/druzyny" className="home_teams-btn">
+              <Link href="/druzyny" className="home_teams-btn uppercase">
                 Poznaj nasze drużyny
               </Link>
             </div>

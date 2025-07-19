@@ -5,7 +5,7 @@ import FadeDelay from "../UI/FadeDelay";
 
 function MainContact() {
   return (
-    <section className="section_div-map " id="kontakt">
+    <section className="section_div-map relative" id="kontakt">
       <ScrollUp>
         <div className="container relative ">
           <div className="home_section_div">

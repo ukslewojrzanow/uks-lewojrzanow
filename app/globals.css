@@ -21,14 +21,19 @@
 
   --drop-shadow: 0 0 1rem rgba(128, 131, 136, 0.4);
 
-  --box-shadow: 0 0 2rem 0.25rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.05);
+  --green-button: #69814d;
+  --dark-button: #241e1e;
 }
 
 [data-theme="dark"] {
   --background-color: #1c1a1b;
   --font-color: #fefefe;
-  --box-shadow: 0 0 1.5rem 0.25rem rgba(128, 131, 136, 0.05);
+  /* --box-shadow: 0 0 1.5rem 0.25rem rgba(128, 131, 136, 0.02); */
+  --box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.15);
   --drop-shadow: 0 0 1rem rgba(254, 254, 254, 0.2);
+  --dark-button: #fefefe;
+  --green-button: #adcc65;
 }
 
 .thememode {
@@ -86,14 +91,16 @@ section {
 
 .section_h2 {
   font-size: 4.2rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.2rem;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 .section_h3 {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: -0.1rem;
+  opacity: 0.9;
 }
 
 p {
@@ -135,7 +142,9 @@ p {
 }
 
 .shadow_logo {
-  filter: drop-shadow(0 0 1rem rgba(128, 131, 136, 0.2)) blur(0.05rem);
+  /* filter: drop-shadow(0 0 1rem rgba(128, 131, 136, 0.2)) blur(0.05rem); */
+  filter: blur(0.05rem);
+  transform: translate(-62%, -50%) scale(0.8);
 }
 
 /* ************* CALENDAR ***************** */
@@ -189,6 +198,7 @@ p {
 
 .calendar-page {
   margin-top: 12.8rem;
+  margin-bottom: 4.8rem;
 }
 .calendar-page-list {
   padding: 3.2rem;
@@ -198,7 +208,8 @@ p {
 }
 
 .calendar-event-page {
-  margin-top: 8rem;
+  margin-top: 12.8rem;
+  margin-bottom: 4.8rem;
 }
 .calendar-event-page .comeback {
   font-size: 1.8rem;
@@ -391,7 +402,6 @@ p {
 }
 .hero_btn-1:link,
 .hero_btn-1:visited {
-  /* background-color: var(--accent-green-light); */
   background: linear-gradient(
     to bottom right,
     var(--accent-green-light),
@@ -399,12 +409,17 @@ p {
   );
   background-size: 250%;
   background-position: bottom right;
+  /* background-color: var(--accent-green-dark);
+  color: var(--background-color); */
 }
+
 .hero_btn-2:link,
 .hero_btn-1:visited {
   background: linear-gradient(to bottom right, #808388, #241e1e);
   background-size: 250%;
   background-position: bottom right;
+  /* background-color: var(--dark-button);
+  color: var(--background-color); */
 }
 
 .hero_btn-1:hover,
@@ -451,6 +466,7 @@ p {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .home_news-imgbox img {
@@ -465,23 +481,36 @@ p {
 .home_news-btn:visited {
   font-size: 1.8rem;
   color: #fefefe;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom right,
     var(--accent-green-light),
     var(--accent-green-dark)
   );
   background-size: 350%;
-  background-position: bottom right;
+  background-position: bottom right; */
+  background-color: var(--green-button);
+  color: var(--background-color);
   padding: 1.2rem 2.4rem;
 
   justify-content: center;
   align-self: center;
   box-shadow: var(--box-shadow);
   transition: all 0.3s;
+  font-weight: 600;
 }
 .home_news-btn:hover {
   transform: translateY(-0.3rem);
   opacity: 0.9;
+}
+
+.latest-news {
+  /* background-color: var(--background-color); */
+  right: 0;
+  bottom: 0;
+  padding: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  filter: drop-shadow(0rem 0rem 0.5rem var(--background-color));
 }
 
 /* HOME TEAMS*/
@@ -506,15 +535,18 @@ p {
 .home_teams-btn:visited {
   font-size: 1.8rem;
   color: #fefefe;
-  background: linear-gradient(to bottom right, #808388, #241e1e);
+  /* background: linear-gradient(to bottom right, #808388, #241e1e);
   background-size: 250%;
-  background-position: bottom right;
+  background-position: bottom right; */
+  background-color: var(--dark-button);
+  color: var(--background-color);
   padding: 1.2rem 2.4rem;
 
   justify-content: center;
   align-self: center;
   box-shadow: var(--box-shadow);
   transition: all 0.3s;
+  font-weight: 600;
 }
 
 .home_teams-btn:hover {
@@ -724,7 +756,7 @@ p {
 .page_teams-copy {
   text-align: center;
   padding-top: 9.2rem;
-  padding-bottom: 3.2rem;
+  padding-bottom: 5.2rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
@@ -859,16 +891,25 @@ p {
   font-family: inherit;
   font-weight: 500;
   padding: 0.8rem 1.8rem;
-  border: 0.1rem solid var(--font-color);
-  transition: all 0.3s;
+  border-bottom: 0.2rem solid var(--font-color);
+  transition: opacity 0.3s;
 }
 
 .team_division-btn:hover {
-  border: 0.1rem solid var(--background-color);
+  border: #ffffff00;
+  opacity: 0.8;
+  padding-bottom: 1rem;
 }
 
 .team_division-btn-active {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.8rem 1.8rem;
   background-color: var(--accent-green-light);
+  border: #ffffff00;
+  transition: opacity 0.3s;
 }
 
 @media (max-width: 50em) {
@@ -933,7 +974,8 @@ p {
 /* ********* POST ****************** */
 
 .post-box {
-  margin-top: 8rem;
+  margin-top: 12.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .comeback {

@@ -5,7 +5,6 @@ import Navigation from "./components/navigation";
 import { ThemeProvider } from "./context/ThemeContext";
 import HeaderReveal from "./components/HeaderReveal";
 import Footer from "./components/Footer";
-import FadeDelay from "./UI/FadeDelay";
 import SocialsAside from "./components/SocialsAside";
 
 const poppins = Poppins({
@@ -39,9 +38,8 @@ export default function RootLayout({
             <Navigation />
           </HeaderReveal>
           {children}
-          <FadeDelay>
-            <Footer />
-          </FadeDelay>
+
+          <Footer />
 
           <SocialsAside />
         </ThemeProvider>
