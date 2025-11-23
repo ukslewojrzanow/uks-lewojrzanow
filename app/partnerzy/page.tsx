@@ -29,44 +29,52 @@ function page() {
       <section className="section_div">
         <div className="container">
           <h2 className="section_h2">Nasi Partnerzy</h2>
-          <div className="grid min-lg:grid-cols-2 gap-20 place-items-center partners-box">
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+          <div className="grid min-lg:grid-cols-2 gap-20  partners-box content-center">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconMedincus} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">
+              <h3 className="section_h3 text-center self-center">
                 Medincus Centrum Słuchu i Mowy
               </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconMedic} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">MMedic Nadarzyn</h3>
+              <h3 className="section_h3 text-center self-center">
+                MMedic Nadarzyn
+              </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconMClinic} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">MClinic Nadarzyn</h3>
+              <h3 className="section_h3 text-center self-center">
+                MClinic Nadarzyn
+              </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconSart} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">SART s.c.</h3>
+              <h3 className="section_h3 text-center self-center">SART s.c.</h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconHotel} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">Hotel Park Kajetany </h3>
+              <h3 className="section_h3 text-center self-center">
+                Hotel Park Kajetany{" "}
+              </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconHydro} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">
+              <h3 className="section_h3 text-center self-center">
                 Hydroodnowa - prace melioracyjne
               </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2 gap-16">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image src={IconGiocca} className="parnetrs-img" alt="x" />
-              <h3 className="section_h3 text-center">Giocca JammSports</h3>
+              <h3 className="section_h3 text-center self-center">
+                Giocca JammSports
+              </h3>
             </div>
           </div>
         </div>

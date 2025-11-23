@@ -1089,6 +1089,13 @@ p {
   padding: 4.8rem 0;
 }
 
+@media (max-width: 64em) {
+  .parnetrs-img {
+    max-width: 25rem;
+    max-height: 25rem;
+  }
+}
+
 @media (max-width: 48em) {
   .parnetrs-img {
     max-width: 15rem;
