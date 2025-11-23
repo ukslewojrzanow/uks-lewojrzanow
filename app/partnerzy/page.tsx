@@ -29,7 +29,7 @@ function page() {
       <section className="section_div">
         <div className="container">
           <h2 className="section_h2">Nasi Partnerzy</h2>
-          <div className="grid max-[768px]:grid-cols-2 min-lg:grid-cols-2 gap-20 place-items-center partners-box">
+          <div className="grid min-lg:grid-cols-2 gap-20 place-items-center partners-box">
             <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconMedincus} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">
