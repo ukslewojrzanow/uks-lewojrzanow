@@ -1075,3 +1075,23 @@ p {
 .contact-ul {
   list-style: circle;
 }
+
+/* ********* Partnerzy ****************** */
+
+.parnetrs-img {
+  filter: drop-shadow(0 0 0.2rem #69814d);
+  border: 0.5rem solid #69814d;
+  border-radius: 99999px;
+  max-width: 40rem;
+  max-height: 40rem;
+}
+.partners-box {
+  padding: 4.8rem 0;
+}
+
+@media (max-width: 48em) {
+  .parnetrs-img {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+}

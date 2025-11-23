@@ -7,28 +7,62 @@ function ContactGirls() {
         <ul className="contact-ul">
           <li>
             <div>
-              <p>Trenerka Główna: Patrycja Rybak</p>
-              <p>Telefon: 509 990 545</p>
-              <p>E-mail: patrycja.rybak@uksrusiec.pl</p>
+              <p>
+                <span className="font-semibold opacity-80">
+                  Trenerka Główna:
+                </span>{" "}
+                Patrycja Rybak
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">Telefon:</span> 509
+                990 545
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">E-mail:</span>{" "}
+                patrycja.rybak@uksrusiec.pl
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <p>Trener: Damian Tobis</p>
-              <p>Telefon: 535 230 512</p>
-              <p>E-mail: damian.tobis@uksrusiec.pl</p>
+              <p>
+                <span className="font-semibold opacity-80">Trener:</span> Damian
+                Tobis
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">Telefon:</span> 535
+                230 512
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">E-mail:</span>{" "}
+                damian.tobis@uksrusiec.pl
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <p>Trener: Maciej Kąkol</p>
-              <p>Telefon: 695 552 027</p>
-              <p>E-mail: maciej.kakol@uksrusiec.pl</p>
+              <p>
+                <span className="font-semibold opacity-80">Trener:</span> Maciej
+                Kąkol
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">Telefon:</span> 695
+                552 027
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">E-mail:</span>{" "}
+                maciej.kakol@uksrusiec.pl
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <p>Trener stażysta: Michał Topolski</p>
+              <p>
+                <span className="font-semibold opacity-80">
+                  Trener stażysta:
+                </span>{" "}
+                Michał Topolski
+              </p>
             </div>
           </li>
         </ul>
@@ -39,27 +73,49 @@ function ContactGirls() {
           <li>
             <div>
               <p>
-                Młodziczki (rocznik {new Date().getFullYear() - 14} i młodsze)
+                <span className="font-semibold opacity-80">Młodziczki</span>{" "}
+                (rocznik {new Date().getFullYear() - 14} i młodsze)
               </p>
-              <p>Trenerzy: Patrycja Rybak, Damian Tobis</p>
+              <p>
+                <span className="font-semibold opacity-80">Trenerzy:</span>{" "}
+                Patrycja Rybak, Damian Tobis
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <p>Młodziczki U13 (rocznik {new Date().getFullYear() - 12})</p>
-              <p>Trenerzy: Patrycja Rybak, Damian Tobis</p>
+              <p>
+                <span className="font-semibold opacity-80">Młodziczki U13</span>{" "}
+                (rocznik {new Date().getFullYear() - 12})
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">Trenerzy:</span>{" "}
+                Patrycja Rybak, Damian Tobis
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <p>Młodziczki U12(rocznik {new Date().getFullYear() - 11})</p>
-              <p>Trenerzy: Damian Tobis, Michał Topolski</p>
+              <p>
+                <span className="font-semibold opacity-80">Młodziczki U12</span>
+                (rocznik {new Date().getFullYear() - 11})
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">Trenerzy:</span>{" "}
+                Damian Tobis, Michał Topolski
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <p>Dziewczęta (rocznik {new Date().getFullYear() - 10})</p>
-              <p>Trenerzy: Maciej Kąkol</p>
+              <p>
+                <span className="font-semibold opacity-80">Dziewczęta</span>{" "}
+                (rocznik {new Date().getFullYear() - 10})
+              </p>
+              <p>
+                <span className="font-semibold opacity-80">Trenerzy:</span>{" "}
+                Maciej Kąkol
+              </p>
             </div>
           </li>
         </ul>
