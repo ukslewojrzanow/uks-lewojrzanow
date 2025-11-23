@@ -30,41 +30,41 @@ function page() {
         <div className="container">
           <h2 className="section_h2">Nasi Partnerzy</h2>
           <div className="grid max-[768px]:grid-cols-2 min-lg:grid-cols-2 gap-20 place-items-center partners-box">
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconMedincus} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">
                 Medincus Centrum Słuchu i Mowy
               </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconMedic} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">MMedic Nadarzyn</h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconMClinic} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">MClinic Nadarzyn</h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconSart} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">SART s.c.</h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconHotel} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">Hotel Park Kajetany </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconHydro} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">
                 Hydroodnowa - prace melioracyjne
               </h3>
             </div>
 
-            <div className="grid max-[768px]:grid-cols-2">
+            <div className="grid max-[768px]:grid-cols-2 gap-16">
               <Image src={IconGiocca} className="parnetrs-img" alt="x" />
               <h3 className="section_h3 text-center">Giocca JammSports</h3>
             </div>
