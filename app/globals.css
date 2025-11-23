@@ -102,6 +102,12 @@ section {
   letter-spacing: -0.1rem;
   opacity: 0.9;
 }
+.section_h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  opacity: 0.9;
+}
 
 p {
   font-size: 1.8rem;
@@ -510,12 +516,24 @@ p {
 
 .latest-news {
   /* background-color: var(--background-color); */
-  right: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   padding: 0.3rem;
   font-weight: 600;
   text-transform: uppercase;
-  filter: drop-shadow(0rem 0rem 0.5rem var(--background-color));
+  font-size: 3.6rem;
+  color: #fefefe;
+  filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.home_news-imgbox:hover .home-news-img {
+  filter: brightness(0.5);
+}
+.home_news-imgbox:hover .latest-news {
+  opacity: 100;
 }
 
 /* HOME TEAMS*/
@@ -1030,4 +1048,30 @@ p {
   font-size: 1.6rem;
   padding: 0 1.2rem;
   text-align: justify;
+}
+
+/* ********* Kontakt ****************** */
+
+.contact-team-box {
+  margin-top: 3.2rem;
+}
+.contact-team-box,
+.contact-team-detail-box {
+  padding: 1.2rem;
+}
+
+.contact-ul {
+  padding: 0.6rem 1.8rem;
+}
+
+.contact-ul div {
+  padding: 0.6rem 0;
+}
+
+.contact-ul p {
+  font-size: 1.4rem;
+}
+
+.contact-ul {
+  list-style: circle;
 }

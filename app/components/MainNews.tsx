@@ -59,7 +59,7 @@ async function MainNews() {
                     width={600}
                     height={400}
                     alt="aktualnosci"
-                    className="relative"
+                    className="relative home-news-img"
                   />
 
                   <span className="absolute text-xl latest-news">
