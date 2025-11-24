@@ -13,17 +13,23 @@ function MainSocial() {
           <Link
             href="https://www.facebook.com/profile.php?id=100063537579848"
             target="_blank"
+            title="Przejdź do Facebook UKS Rusiec"
           >
-            <Image src={IMGface} alt="Logo" />
+            <Image src={IMGface} alt="Logo Facebook" />
           </Link>
           <Link
             href="https://www.instagram.com/uks_rusiec_handball/"
             target="_blank"
+            title="Przejdź do Instagram UKS Rusiec"
           >
-            <Image src={IMGinsta} alt="Logo" />
+            <Image src={IMGinsta} alt="Logo Instagram" />
           </Link>
-          <Link href="https://www.tiktok.com/@uks_rusiec" target="_blank">
-            <Image src={IMGtiktok} alt="Logo" />
+          <Link
+            href="https://www.tiktok.com/@uks_rusiec"
+            target="_blank"
+            title="Przejdź do TikTok UKS Rusiec"
+          >
+            <Image src={IMGtiktok} alt="Logo TikTok" />
           </Link>
         </div>
       </div>
