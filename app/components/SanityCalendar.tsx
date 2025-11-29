@@ -63,7 +63,8 @@ export default function SanityCalendar({ events }: Props) {
       <div>
         <Image
           src={IMGCallendar}
-          alt="Logo"
+          alt="Ikona Kalendarza"
+          title="Kalendarz"
           className="callendar_icon "
           onClick={() => setIsOpen(!isOpen)}
         />

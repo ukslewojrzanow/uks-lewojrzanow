@@ -17,6 +17,7 @@ function page() {
           <Image
             src={KVdruzyny}
             alt="Drużyny zespołu UKS Rusiec"
+            title="Drużyny zespołu UKS Rusiec"
             fill
             className="object-cover object-top -z-10 "
           />
@@ -39,24 +40,34 @@ function page() {
       </ScrollUp>
       <FadeIn>
         <section className="page_teams-teamsbox">
-          <Link href="/druzyny/chlopcy" className="overflow-hidden">
+          <Link
+            href="/druzyny/chlopcy"
+            className="overflow-hidden"
+            title="Przejdź do drużyny chłopców"
+          >
             <div className="page_teams-team boys relative">
               <p className="pageToTeam_link">Chłopcy</p>
 
               <Image
                 src={KVchlopaki}
                 alt="Szczypiornista zespołu UKS wykonujący rzut"
+                title="Drużyna chłopców"
                 fill
                 className="object-cover object-top -z-10"
               />
             </div>
           </Link>
-          <Link href="/druzyny/dziewczyny" className="overflow-hidden">
+          <Link
+            href="/druzyny/dziewczyny"
+            className="overflow-hidden"
+            title="Przejdź do drużyny dziewcząt"
+          >
             <div className="page_teams-team girls relative">
               <p className="pageToTeam_link">Dziewczyny</p>
               <Image
                 src={KVdziewczyny}
                 alt="Szczypiornistka zespołu UKS wykonująca rzut"
+                title="Drużyna dziewcząt"
                 fill
                 className="object-cover object-top -z-10"
               />

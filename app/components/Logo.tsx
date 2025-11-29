@@ -8,7 +8,7 @@ import Link from "next/link";
 function Logo() {
   const { theme } = useTheme();
   return (
-    <Link href="/" className="h-full w-auto">
+    <Link href="/" className="h-full w-auto" title="Przejdź do strony głównej">
       <Image
         src={theme === "dark" ? LogoWhite : LogoBlack}
         alt="Logo UKS Rusiec"

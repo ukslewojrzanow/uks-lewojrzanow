@@ -21,8 +21,13 @@ function SocialsAside() {
             <Link
               href="https://www.facebook.com/profile.php?id=100063537579848"
               target="_blank"
+              title="Odwiedź nasz FaceBook"
             >
-              <Image src={IMGface} alt="Logo" />
+              <Image
+                src={IMGface}
+                alt="FaceBook Logo"
+                title="Odwiedź nasz FaceBook"
+              />
             </Link>
           </li>
         </FadeDelay>
@@ -31,15 +36,28 @@ function SocialsAside() {
             <Link
               href="https://www.instagram.com/uks_rusiec_handball/"
               target="_blank"
+              title="Odwiedź nasz Instagram"
             >
-              <Image src={IMGinsta} alt="Logo" />
+              <Image
+                src={IMGinsta}
+                alt="Instagram Logo"
+                title="Odwiedź nasz Instagram"
+              />
             </Link>
           </li>
         </FadeDelay>
         <FadeDelay>
           <li>
-            <Link href="https://www.tiktok.com/@uks_rusiec" target="_blank">
-              <Image src={IMGtiktok} alt="Logo" />
+            <Link
+              href="https://www.tiktok.com/@uks_rusiec"
+              target="_blank"
+              title="Odwiedź nasz TikTok"
+            >
+              <Image
+                src={IMGtiktok}
+                alt="TikTok Logo"
+                title="Odwiedź nasz TikTok"
+              />
             </Link>
           </li>
         </FadeDelay>
