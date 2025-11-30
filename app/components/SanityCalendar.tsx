@@ -72,7 +72,7 @@ export default function SanityCalendar({ events }: Props) {
       {isOpen && (
         <div className="calendar-box">
           <div className="calendar-link-box calendar-main-page-link flex justify-between items-center">
-            <Link href="/kalendarz">Przejdź do całego Kalendarza {"->"}</Link>{" "}
+            <Link href="/kalendarz">Przejdź do pełnego Kalendarza {"->"}</Link>{" "}
             <button
               onClick={() => {
                 setIsOpen(false);
