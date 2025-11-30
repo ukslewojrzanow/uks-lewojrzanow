@@ -176,6 +176,7 @@ p {
 
 .calendar-box-button {
   padding: 0 0.8rem;
+  font-weight: 600;
 }
 
 .react-calendar {
