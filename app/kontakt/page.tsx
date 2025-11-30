@@ -1,4 +1,5 @@
 import KVdruzyny from "@/public/bg-teams.jpg";
+import IMGjuniors from "@/public/contact-juniors.png";
 import FadeIn from "../UI/FadeIn";
 import Image from "next/image";
 import MainPartners from "../components/MainPartners";
@@ -48,6 +49,13 @@ function page() {
                 </li>
               </ul>
             </div>
+          </FadeIn>
+          <FadeIn>
+            <Image
+              src={IMGjuniors}
+              alt="Zespół drużyny piłki ręcznej UKS Rusiec"
+              className="img-kv"
+            />
           </FadeIn>
           <div className="grid min-xl:grid-cols-2">
             <FadeIn>
