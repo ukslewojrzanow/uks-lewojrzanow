@@ -71,6 +71,9 @@ export default function SanityCalendar({ events }: Props) {
       </div>
       {isOpen && (
         <div className="calendar-box">
+          <div className="calendar-link-box calendar-main-page-link">
+            <Link href="/kalendarz">Przejdź do całego Kalendarza {"->"}</Link>
+          </div>
           <Calendar
             locale="pl-PL"
             onChange={handleDateChange}

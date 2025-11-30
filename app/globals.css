@@ -169,6 +169,11 @@ p {
   display: none !important;
 }
 
+.calendar-main-page-link {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+}
+
 .react-calendar {
   background-color: #69814d !important;
   border: #1c1a1b !important;

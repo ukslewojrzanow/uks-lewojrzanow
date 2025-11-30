@@ -13,6 +13,10 @@ import IconGiocca from "@/public/Icon_Giocca.png";
 import IconVerk from "@/public/Icon_Verk.png";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Partnerzy",
+};
+
 function page() {
   return (
     <>

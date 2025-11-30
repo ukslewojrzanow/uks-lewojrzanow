@@ -9,6 +9,10 @@ import ContactGirls from "../components/ContactGirls";
 import ContactBoys from "../components/ContactBoys";
 import ContactAdacemy from "../components/ContactAcademy";
 
+export const metadata = {
+  title: "Kontakt",
+};
+
 function page() {
   return (
     <>

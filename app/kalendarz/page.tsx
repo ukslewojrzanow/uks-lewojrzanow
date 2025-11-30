@@ -12,6 +12,10 @@ const EVENTS_QUERY = `*[
 
 const options = { next: { revalidate: 30 } };
 
+export const metadata = {
+  title: "Kalendarz",
+};
+
 async function page() {
   const events = await client.fetch<SanityDocument[]>(
     EVENTS_QUERY,

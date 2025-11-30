@@ -28,6 +28,10 @@ type Players = {
   publishedAt: Date;
 };
 
+export const metadata = {
+  title: "Drużyna Chłopców",
+};
+
 async function page() {
   const players = await client.fetch<Players[]>(PLAYERS_QUERY, {}, options);
 

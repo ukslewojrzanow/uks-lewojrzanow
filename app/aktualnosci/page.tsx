@@ -21,6 +21,10 @@ const POSTS_QUERY = `*[
 
 const options = { next: { revalidate: 30 } };
 
+export const metadata = {
+  title: "Aktualności",
+};
+
 async function page() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 

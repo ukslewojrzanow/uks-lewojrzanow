@@ -8,6 +8,10 @@ import MainSocial from "../components/MainSocial";
 import FadeIn from "../UI/FadeIn";
 import ScrollUp from "../UI/ScrollUp";
 
+export const metadata = {
+  title: "Drużyny",
+};
+
 function page() {
   return (
     <>
