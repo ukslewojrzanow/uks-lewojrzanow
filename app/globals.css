@@ -682,6 +682,10 @@ p {
   margin-bottom: 0rem;
 }
 
+.column {
+  text-align: left;
+}
+
 .footer_corpo {
   font-size: 1.6rem;
   opacity: 0.75;

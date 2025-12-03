@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer-boxes">
       <div className="container">
         <div className="footer-box">
-          <div>
+          <div className="column">
             <p>Menu</p>
             <ul>
               <li>
@@ -28,7 +28,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="column">
             <p>Social Media</p>
             <ul>
               <li>Facebook: UKS Rusiec</li>
@@ -36,7 +36,7 @@ function Footer() {
               <li>TikTok: uks_rusiec</li>
             </ul>
           </div>
-          <div>
+          <div className="column">
             <p>Dane</p>
             <ul>
               <li>biuro@uksrusiec.pl</li>
