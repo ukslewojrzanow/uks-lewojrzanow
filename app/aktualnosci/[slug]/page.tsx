@@ -5,7 +5,27 @@ import { client } from "@/sanity/client";
 import Link from "next/link";
 import Image from "next/image";
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
+const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
+  ...,
+  image{
+    ...,
+    asset->{
+      ...,
+      metadata{
+        dimensions
+      }
+    }
+  },
+  image2{
+    ...,
+    asset->{
+      ...,
+      metadata{
+        dimensions
+      }
+    }
+  }
+}`;
 
 const { projectId, dataset } = client.config();
 const urlFor = (source: SanityImageSource) =>
@@ -27,10 +47,14 @@ export default async function PostPage({
   const post = await client.fetch<SanityDocument>(
     POST_QUERY,
     await params,
-    options
+    options,
   );
   const postImageUrl = post.image
-    ? urlFor(post.image)?.width(550).height(310).url()
+    ? urlFor(post.image)?.width(1200).url()
+    : null;
+
+  const postImageUrl2 = post?.image2
+    ? urlFor(post.image2)?.width(1200).url()
     : null;
 
   return (
@@ -40,15 +64,28 @@ export default async function PostPage({
           ← Wróć do aktualności
         </Link>
       </div>
-      {postImageUrl && (
-        <Image
-          src={postImageUrl}
-          alt={post.title}
-          width="550"
-          height="310"
-          quality={100}
-        />
-      )}
+      <div className="flex  gap-10 w-fit h-fit">
+        {postImageUrl && (
+          <Image
+            src={postImageUrl}
+            alt={post.title}
+            width={post.image.asset.metadata.dimensions.width}
+            height={post.image.asset.metadata.dimensions.height}
+            quality={100}
+            className="max-h-[600px] w-auto"
+          />
+        )}
+        {postImageUrl2 && (
+          <Image
+            src={postImageUrl2}
+            alt={post.title}
+            width={post.image.asset.metadata.dimensions.width}
+            height={post.image.asset.metadata.dimensions.height}
+            quality={100}
+            className="max-h-[600px] w-auto"
+          />
+        )}
+      </div>
 
       <div className="prose">
         {Array.isArray(post.body) && <PortableText value={post.body} />}

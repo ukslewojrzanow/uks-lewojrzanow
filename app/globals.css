@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* 
-#adcc65
-#69814d
+#CB982C
+#C7870A
 #a5a8ad
 #808388
 #241e1e
@@ -13,8 +13,8 @@
   --background-color: #fefefe;
   --font-color: #1c1a1b;
 
-  --accent-green-dark: #69814d;
-  --accent-green-light: #adcc65;
+  --accent-green-dark: #c7870a;
+  --accent-green-light: #cb982c;
 
   --accent-graphite-light: #a5a8ad;
   --accent-graphite-dark: #808388;
@@ -22,7 +22,7 @@
   --drop-shadow: 0 0 1rem rgba(128, 131, 136, 0.4);
 
   --box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.05);
-  --green-button: #69814d;
+  --green-button: #c7870a;
   --dark-button: #241e1e;
 }
 
@@ -33,7 +33,7 @@
   --box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.15);
   --drop-shadow: 0 0 1rem rgba(254, 254, 254, 0.2);
   --dark-button: #fefefe;
-  --green-button: #adcc65;
+  --green-button: #cb982c;
 }
 
 .thememode {
@@ -180,7 +180,7 @@ p {
 }
 
 .react-calendar {
-  background-color: #69814d !important;
+  background-color: var(--background-color) !important;
   border: #1c1a1b !important;
   box-shadow: var(--box-shadow);
 }
@@ -190,20 +190,20 @@ p {
 }
 
 .react-calendar__tile--now {
-  background-color: #adcc65 !important;
+  background-color: var(--accent-graphite-light) !important;
 }
 
 .react-calendar_event {
-  background-color: rgba(254, 254, 254, 0.8) !important;
+  background-color: var(--accent-green-light) !important;
   color: #1c1a1b !important;
 }
 
 .react-calendar_event:active {
-  background-color: rgba(254, 254, 254) !important;
+  background-color: var(--accent-green-dark) !important;
 }
 
 .calendar-link-box {
-  background-color: var(--font-color);
+  background-color: var(--accent-green-dark);
   color: var(--background-color);
 }
 .calendar-link-box p {
