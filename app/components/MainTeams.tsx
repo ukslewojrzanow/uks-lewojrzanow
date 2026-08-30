@@ -25,9 +25,9 @@ function MainTeams() {
               </h3>
               <p>
                 UKS Rusiec to nie tylko klub - to rodzina! Od młodych talentów
-                po doświadczonych zawodników - nasze drużyny to duma UKS Rusiec.
-                Poznaj nasze sekcje męskie i żeńskie, zobacz kto gra z sercem i
-                zostawia wszystko na boisku.
+                po doświadczonych zawodników - nasze drużyny to duma UKS Lew
+                Ojrzanów. Poznaj nasze sekcje męskie i żeńskie, zobacz kto gra z
+                sercem i zostawia wszystko na boisku.
               </p>
               <Link href="/druzyny" className="home_teams-btn uppercase">
                 Poznaj nasze drużyny

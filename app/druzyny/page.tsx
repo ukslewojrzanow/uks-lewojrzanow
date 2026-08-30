@@ -32,13 +32,13 @@ function page() {
         <section className="container page_teams-copy">
           <h2 className="section_h2">Poznaj nasze drużyny</h2>
           <p>
-            UKS Rusiec to miejsce, gdzie pasja do piłki ręcznej łączy zawodników
-            i zawodniczki w silne, zgrane zespoły. Niezależnie od tego, czy
-            kibicujesz chłopakom czy dziewczynom - tu znajdziesz sportowe
-            emocje, sukcesy i prawdziwego ducha rywalizacji.
+            UKS Lew Ojrzanów to miejsce, gdzie pasja do piłki ręcznej łączy
+            zawodników i zawodniczki w silne, zgrane zespoły. Niezależnie od
+            tego, czy kibicujesz chłopakom czy dziewczynom - tu znajdziesz
+            sportowe emocje, sukcesy i prawdziwego ducha rywalizacji.
           </p>
           <h3 className="section_h3">
-            Wybierz drużynę i zobacz, kto gra z sercem dla UKS Rusiec!
+            Wybierz drużynę i zobacz, kto gra z sercem dla UKS Lew Ojrzanów!
           </h3>
         </section>
       </ScrollUp>

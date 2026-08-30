@@ -31,18 +31,18 @@ function Footer() {
           <div className="column">
             <p>Social Media</p>
             <ul>
-              <li>Facebook: UKS Rusiec</li>
-              <li>Instagram: uks_rusiec_handball</li>
-              <li>TikTok: uks_rusiec</li>
+              <li>Facebook: UKS Lew Ojrzanów</li>
+              <li>Instagram: ukslewojrzanow</li>
+              {/* <li>TikTok: uks_rusiec</li> */}
             </ul>
           </div>
           <div className="column">
             <p>Dane</p>
             <ul>
-              <li>biuro@uksrusiec.pl</li>
-              <li>ul. Osiedlowa 72</li>
-              <li>05-830 Rusiec</li>
-              <li>NIP: 534-254-27-41</li>
+              <li>biuro@ukslewojrzanow.pl</li>
+              <li>ul. Szkolna 1</li>
+              <li>96-321 Ojrzanów</li>
+              {/* <li>NIP: 534-254-27-41</li> */}
             </ul>
           </div>
         </div>

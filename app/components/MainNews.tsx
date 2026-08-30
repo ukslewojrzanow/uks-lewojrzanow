@@ -40,9 +40,9 @@ async function MainNews() {
             <div className="home_news-textbox">
               <h3 className="section_h3">Najnowsze z boiska!</h3>
               <p>
-                Nie przegap tego, co dzieje się w UKS Rusiec - mecze, wyniki,
-                wydarzenia i kulisy klubu! Sprawdź najnowsze aktualności i bądź
-                na bieżąco z naszymi sukcesami.
+                Nie przegap tego, co dzieje się w UKS Lew Ojrznaów - mecze,
+                wyniki, wydarzenia i kulisy klubu! Sprawdź najnowsze aktualności
+                i bądź na bieżąco z naszymi sukcesami.
               </p>
               <Link href="/aktualnosci" className="home_news-btn uppercase">
                 Wszystkie aktualności

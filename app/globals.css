@@ -128,6 +128,7 @@ p {
   background: url("/background2.png");
   background-size: cover;
   background-position: center;
+
   z-index: -10;
   /* opacity: 0.85; */
 }
@@ -385,7 +386,8 @@ p {
   height: 100%;
 }
 .hero_h1,
-.hero_h2 {
+.hero_h2,
+.hero_p {
   color: #fefefe;
   filter: drop-shadow(0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.4));
   text-transform: uppercase;
@@ -402,6 +404,11 @@ p {
   font-weight: 600;
   letter-spacing: -0.2rem;
   /* color: var(--font-color); */
+}
+
+.hero_p {
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
 }
 
 .hero_btn-box {
@@ -1140,8 +1147,8 @@ p {
 /* ********* Partnerzy ****************** */
 
 .parnetrs-img {
-  filter: drop-shadow(0 0 0.2rem #69814d);
-  border: 0.5rem solid #69814d;
+  filter: drop-shadow(0 0 0.2rem var(--accent-green-dark));
+  border: 0.5rem solid var(--accent-green-dark);
   border-radius: 99999px;
   max-width: 32rem;
   max-height: 32rem;

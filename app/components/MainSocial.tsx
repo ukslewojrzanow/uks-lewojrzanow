@@ -11,26 +11,26 @@ function MainSocial() {
         <h2 className="section_h2">Odwiedź nas</h2>
         <div className="home_socials">
           <Link
-            href="https://www.facebook.com/profile.php?id=100063537579848"
+            href="https://www.facebook.com/people/UKS-LEW-Ojrzan%C3%B3w/61580468030071/"
             target="_blank"
-            title="Przejdź do Facebook UKS Rusiec"
+            title="Przejdź do Facebook UKS Lew Ojrzanów"
           >
             <Image src={IMGface} alt="Logo Facebook" />
           </Link>
           <Link
-            href="https://www.instagram.com/uks_rusiec_handball/"
+            href="https://www.instagram.com/ukslewojrzanow/"
             target="_blank"
-            title="Przejdź do Instagram UKS Rusiec"
+            title="Przejdź do Instagram UKS Lew Ojrzanów"
           >
             <Image src={IMGinsta} alt="Logo Instagram" />
           </Link>
-          <Link
+          {/* <Link
             href="https://www.tiktok.com/@uks_rusiec"
             target="_blank"
-            title="Przejdź do TikTok UKS Rusiec"
+            title="Przejdź do TikTok UKS Lew Ojrzanów"
           >
             <Image src={IMGtiktok} alt="Logo TikTok" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

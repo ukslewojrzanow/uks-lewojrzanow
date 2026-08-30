@@ -19,7 +19,7 @@ function SocialsAside() {
         <FadeDelay>
           <li>
             <Link
-              href="https://www.facebook.com/profile.php?id=100063537579848"
+              href="https://www.facebook.com/people/UKS-LEW-Ojrzan%C3%B3w/61580468030071/"
               target="_blank"
               title="Odwiedź nasz FaceBook"
             >
@@ -34,7 +34,7 @@ function SocialsAside() {
         <FadeDelay>
           <li>
             <Link
-              href="https://www.instagram.com/uks_rusiec_handball/"
+              href="https://www.instagram.com/ukslewojrzanow/"
               target="_blank"
               title="Odwiedź nasz Instagram"
             >
@@ -46,7 +46,7 @@ function SocialsAside() {
             </Link>
           </li>
         </FadeDelay>
-        <FadeDelay>
+        {/* <FadeDelay>
           <li>
             <Link
               href="https://www.tiktok.com/@uks_rusiec"
@@ -60,7 +60,7 @@ function SocialsAside() {
               />
             </Link>
           </li>
-        </FadeDelay>
+        </FadeDelay> */}
       </ul>
     </div>
   );

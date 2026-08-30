@@ -29,17 +29,18 @@ export default function MainHero() {
       }, 5000);
       return () => clearInterval(interval);
     },
-    [currentKV]
+    [currentKV],
   );
 
   return (
     <section className="min-h-screen hero_section overflow-hidden hero_section">
       <div className="hero_copy-boxes">
         <div className="hero_copy-box">
-          <h1 className=" hero_h1">UKS RUSIEC</h1>
+          <h1 className=" hero_h1">UKS LEW OJRZANÓW</h1>
           <h2 className="hero_h2">
-            Klub sportowy z sekcją piłki ręcznej dziewcząt i chłopców
+            Klub Sportowy szkolący dzieci i młodzież w piłce ręcznej
           </h2>
+          <p className="hero_p">GRAJ. BAW SIĘ. ROŚNIJ Z NAMI! 🖤💛</p>
           <div className="hero_btn-box">
             <Link href="/#aktualnosci" className="hero_btn-1">
               Aktualności
