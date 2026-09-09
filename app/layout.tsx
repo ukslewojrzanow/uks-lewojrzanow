@@ -14,7 +14,10 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: { template: "%s / UKS Rusiec", default: "Witaj / UKS Rusiec" },
+  title: {
+    template: "%s / UKS Lew Ojrzanów",
+    default: "Witaj / UKS Lew Ojrzanów",
+  },
   description:
     "Ceryfikowana Akademia Piłki Ręcznej ZPRP, Ośrodek Szkolenia w piłce ręcznej OSPR dziewcząt, Handball Team, Athletic Team",
 };
