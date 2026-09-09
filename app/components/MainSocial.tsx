@@ -1,5 +1,4 @@
 import IMGinsta from "@/public/instagramLogo.png";
-import IMGtiktok from "@/public/tiktokLogo.png";
 import IMGface from "@/public/facebookLogo.png";
 import Link from "next/link";
 import Image from "next/image";
@@ -24,13 +23,6 @@ function MainSocial() {
           >
             <Image src={IMGinsta} alt="Logo Instagram" />
           </Link>
-          {/* <Link
-            href="https://www.tiktok.com/@uks_rusiec"
-            target="_blank"
-            title="Przejdź do TikTok UKS Lew Ojrzanów"
-          >
-            <Image src={IMGtiktok} alt="Logo TikTok" />
-          </Link> */}
         </div>
       </div>
     </section>

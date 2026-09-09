@@ -1,14 +1,8 @@
 import KVdruzyny from "@/public/bg-teams.jpg";
-import IMGjuniors from "@/public/contact-juniors.png";
 import FadeIn from "../UI/FadeIn";
 import Image from "next/image";
 import MainPartners from "../components/MainPartners";
 import MainSocial from "../components/MainSocial";
-import ContactGirls from "../components/ContactGirls";
-
-import ContactBoys from "../components/ContactBoys";
-import ContactAdacemy from "../components/ContactAcademy";
-import MainContact from "../components/MainContact";
 import FadeDelay from "../UI/FadeDelay";
 
 export const metadata = {
@@ -96,25 +90,6 @@ function page() {
               </ul>
             </div>
           </FadeIn>
-
-          {/* <FadeIn>
-            <Image
-              src={IMGjuniors}
-              alt="Zespół drużyny piłki ręcznej UKS Rusiec"
-              className="img-kv"
-            />
-          </FadeIn>
-          <div className="grid min-xl:grid-cols-2">
-            <FadeIn>
-              <ContactGirls />
-            </FadeIn>
-            <FadeIn>
-              <ContactBoys />
-            </FadeIn>
-          </div>
-          <FadeIn>
-            <ContactAdacemy />
-          </FadeIn> */}
         </div>
       </section>
       <FadeDelay>
