@@ -29,7 +29,7 @@ type Players = {
 };
 
 export const metadata = {
-  title: "Drużyna Chłopców",
+  title: "Klasy I-III",
 };
 
 async function page() {

@@ -29,7 +29,7 @@ type Players = {
 };
 
 export const metadata = {
-  title: "Druzyna Dziewcząt",
+  title: "Klasy IV-V",
 };
 
 async function page() {
