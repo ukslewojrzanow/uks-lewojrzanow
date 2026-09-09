@@ -59,25 +59,38 @@ function MapBoys({ players }: Props) {
             >
               Wszyscy
             </button>
-            {divisionsAPI.sort().map((division: string) => (
-              <button
-                className={`uppercase ${
-                  isDivision === division
-                    ? "team_division-btn-active"
-                    : "team_division-btn"
-                }`}
-                key={division}
-                value={division}
-                onClick={handleDivisionClick}
-              >
-                U{division}
-              </button>
-            ))}
+            {divisionsAPI
+              .filter(
+                (division) =>
+                  division === "Klasa-1" ||
+                  division === "Klasa-2" ||
+                  division === "Klasa-3",
+              )
+              .sort()
+              .map((division: string) => (
+                <button
+                  className={`uppercase ${
+                    isDivision === division
+                      ? "team_division-btn-active"
+                      : "team_division-btn"
+                  }`}
+                  key={division}
+                  value={division}
+                  onClick={handleDivisionClick}
+                >
+                  {division}
+                </button>
+              ))}
           </div>
         </div>
         <div className="team_map">
           {players
-            .filter((player) => player.gender === "chlopak")
+            .filter(
+              (player) =>
+                player.division === "Klasa-1" ||
+                player.division === "Klasa-2" ||
+                player.division === "Klasa-3",
+            )
             .map((player) => {
               const assetUrl = player.image?.asset?._ref
                 ? urlFor(player.image).width(300).height(300).url()

@@ -49,7 +49,7 @@ function Footer() {
         <div>
           <p className="footer_corpo">
             {" "}
-            &copy; {new Date().getFullYear()} UKS RUSIEC{" "}
+            &copy; {new Date().getFullYear()} UKS Lew Ojrzanów{" "}
           </p>
           <p className="footer_tag">GrabCode Studio</p>
         </div>

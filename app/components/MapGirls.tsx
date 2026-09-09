@@ -58,25 +58,33 @@ function MapGirls({ players }: Props) {
             >
               Wszyscy
             </button>
-            {divisionsAPI.sort().map((division: string) => (
-              <button
-                className={`uppercase ${
-                  isDivision === division
-                    ? "team_division-btn-active"
-                    : "team_division-btn"
-                }`}
-                key={division}
-                value={division}
-                onClick={handleDivisionClick}
-              >
-                U{division}
-              </button>
-            ))}
+            {divisionsAPI
+              .filter(
+                (division) => division === "Klasa-4" || division === "Klasa-5",
+              )
+              .sort()
+              .map((division: string) => (
+                <button
+                  className={`uppercase ${
+                    isDivision === division
+                      ? "team_division-btn-active"
+                      : "team_division-btn"
+                  }`}
+                  key={division}
+                  value={division}
+                  onClick={handleDivisionClick}
+                >
+                  {division}
+                </button>
+              ))}
           </div>
         </div>
         <div className="team_map">
           {players
-            .filter((player) => player.gender === "dziewczyna")
+            .filter(
+              (player) =>
+                player.division === "Klasa-4" || player.division === "Klasa-5",
+            )
             .map((player) => {
               const assetUrl = player.image?.asset?._ref
                 ? urlFor(player.image).width(300).height(300).url()

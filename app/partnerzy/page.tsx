@@ -3,13 +3,13 @@ import FadeIn from "../UI/FadeIn";
 import Image from "next/image";
 import MainPartners from "../components/MainPartners";
 import MainSocial from "../components/MainSocial";
-import IconMedincus from "@/public/Icon_Medincus.png";
-import IconMedic from "@/public/Icon_Medic.png";
-import IconMClinic from "@/public/Icon_MClinic.png";
-import IconHydro from "@/public/Icon_Hydro.png";
-import IconHotel from "@/public/Icon_Hotel.png";
+import SPOjrzanow from "@/public/Icon_sp_ojrzanow.png";
+import Zabia from "@/public/Icon_zabia.png";
+import Wmzpr from "@/public/icon-wmzpr.png";
+import Icontk from "@/public/Icon_tk.png";
+import Iconfego from "@/public/Icon_fego.png";
 import IconSart from "@/public/Icon_Sart.png";
-import IconGiocca from "@/public/Icon_Giocca.png";
+import Iconnn from "@/public/Icon_nn.png";
 import IconVerk from "@/public/Icon_Verk.png";
 import Link from "next/link";
 
@@ -38,49 +38,59 @@ function page() {
           <div className="grid min-lg:grid-cols-2 gap-20 partners-box content-center">
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Link
-                href="https://www.facebook.com/medincuspl"
-                title="Przejdź do Medincus"
+                href="https://spojrzanow.pl/"
+                title="Przejdź do Szkoła Podstawowa im. Stefanii Dziewulskiej w Ojrzanowie"
               >
                 <Image
-                  src={IconMedincus}
+                  src={SPOjrzanow}
                   className="parnetrs-img"
-                  alt="Logo Partnera Medincus Centrium Słuchu i Mowy"
+                  alt="Logo Partnera Szkoła Podstawowa im. Stefanii Dziewulskiej w Ojrzanowie "
                 />
               </Link>
               <h3 className="section_h3 text-center self-center">
-                Medincus Centrum Słuchu i Mowy
+                Szkoła Podstawowa im. Stefanii Dziewulskiej w Ojrzanowie
               </h3>
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Link
-                href="https://www.facebook.com/profile.php?id=100083973825693"
-                title="Przejdź do MMedic"
+                href="https://www.zabiawola.pl/"
+                title="Przejdź do Gmina Żabia Wola"
               >
                 <Image
-                  src={IconMedic}
+                  src={Zabia}
                   className="parnetrs-img"
-                  alt="Logo Partnera MMedic Nadarzyn"
+                  alt="Logo Partnera Gmina Żabia Wola"
                 />
               </Link>
               <h3 className="section_h3 text-center self-center">
-                MMedic Nadarzyn
+                Gmina Żabia Wola
               </h3>
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
-              <Link
-                href="https://www.facebook.com/Mclinicnadarzyn"
-                title="Przejdź do MClinic"
-              >
+              <Link href="https://wmzpr.pl/" title="Przejdź do WMZPR">
                 <Image
-                  src={IconMClinic}
+                  src={Wmzpr}
                   className="parnetrs-img"
-                  alt="Logo Partnera MClinic Nadarzyn"
+                  alt="Logo Partnera Warszawsko-Mazowiecki Związek Piłki Ręcznej"
                 />
               </Link>
               <h3 className="section_h3 text-center self-center">
-                MClinic Nadarzyn
+                Warszawsko-Mazowiecki Związek Piłki Ręcznej
+              </h3>
+            </div>
+
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
+              <Link href="https://www.verk.pl" title="Przejdź do Verk Group">
+                <Image
+                  src={IconVerk}
+                  className="parnetrs-img"
+                  alt="Logo Partnera VERK GROUP SP. Z O.O. SP.K."
+                />
+              </Link>
+              <h3 className="section_h3 text-center self-center">
+                VERK GROUP SP. Z O.O. SP.K.
               </h3>
             </div>
 
@@ -92,71 +102,59 @@ function page() {
                 <Image
                   src={IconSart}
                   className="parnetrs-img"
-                  alt="Logo Partnera SART s.c."
-                />
-              </Link>
-              <h3 className="section_h3 text-center self-center">SART s.c.</h3>
-            </div>
-
-            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
-              <Link
-                href="https://www.facebook.com/parkkajetany"
-                title="Przejdź do Park Kajetany"
-              >
-                <Image
-                  src={IconHotel}
-                  className="parnetrs-img"
-                  alt="Logo Partnera Hotel Park Kajetany"
+                  alt="Logo Partnera Daniel Śliwiński Premium Finance"
                 />
               </Link>
               <h3 className="section_h3 text-center self-center">
-                Hotel Park Kajetany
+                Daniel Śliwiński Premium Finance
               </h3>
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Link
-                href="https://www.facebook.com/profile.php?id=100078227894833"
-                title="Przejdź do Hydroodnowa"
+                href="https://www.fegotrade.pl"
+                title="Przejdź do Fego Trade"
               >
                 <Image
-                  src={IconHydro}
+                  src={Iconfego}
                   className="parnetrs-img"
-                  alt="Logo Partnera Hydroodnowa - prace melioracyjne"
+                  alt="Logo Partnera Fego Trade Sp. z o.o."
                 />
               </Link>
               <h3 className="section_h3 text-center self-center">
-                Hydroodnowa - prace melioracyjne
+                Fego Trade Sp. z o.o.
               </h3>
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Link
-                href="https://www.facebook.com/verkskleppl/"
-                title="Przejdź do Verk Group"
+                href="https://www.tkinvest.com.pl/"
+                title="Przejdź do TK Invest"
               >
                 <Image
-                  src={IconVerk}
+                  src={Icontk}
                   className="parnetrs-img"
-                  alt="Logo Partnera Verk Group"
+                  alt="Logo Partnera TK Invest Group Sp. z o.o. Sp.k"
                 />
               </Link>
-              <h3 className="section_h3 text-center self-center">Verk Group</h3>
+              <h3 className="section_h3 text-center self-center">
+                TK Invest Group Sp. z o.o. Sp.k
+              </h3>
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Link
-                href="https://www.facebook.com/profile.php?id=61582486892051"
-                title="Przejdź do Giocca"
+                href="http://www.nieszablonowa.pl/"
+                title="Przejdź do Nieszablonowa Agnieszka Dylak"
               >
                 <Image
-                  src={IconGiocca}
+                  src={Iconnn}
                   className="parnetrs-img"
-                  alt="Logo Partnera Giocca JammSports"
+                  alt="Logo Partnera Nieszablonowa Agnieszka Dylak"
                 />
               </Link>
               <h3 className="section_h3 text-center self-center">
-                Giocca JammSports
+                Nieszablonowa Agnieszka Dylak
               </h3>
             </div>
           </div>

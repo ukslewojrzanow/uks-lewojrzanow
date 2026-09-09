@@ -45,13 +45,18 @@ function page() {
       <FadeIn>
         <section className="page_teams-teamsbox">
           <Link
-            href="/druzyny/chlopcy"
+            href="/druzyny/klasy-1-3"
             className="overflow-hidden"
             title="Przejdź do drużyny chłopców"
           >
             <div className="page_teams-team boys relative">
-              <p className="pageToTeam_link">Chłopcy</p>
-
+              <div>
+                <p className="pageToTeam_link text-center">Akademia</p>
+                <p className="pageToTeam_link text-center">
+                  zRęcznego Lwiątkia
+                </p>
+                <p className="text-center">Dzieci klas I-III</p>
+              </div>
               <Image
                 src={KVchlopaki}
                 alt="Szczypiornista zespołu UKS wykonujący rzut"
@@ -62,12 +67,16 @@ function page() {
             </div>
           </Link>
           <Link
-            href="/druzyny/dziewczyny"
+            href="/druzyny/klasy-4-5"
             className="overflow-hidden"
             title="Przejdź do drużyny dziewcząt"
           >
             <div className="page_teams-team girls relative">
-              <p className="pageToTeam_link">Dziewczyny</p>
+              <div>
+                <p className="pageToTeam_link text-center">Akademia</p>
+                <p className="pageToTeam_link text-center">zRęcznego Lwa</p>
+                <p className="text-center">Dzieci klas IV-V</p>
+              </div>
               <Image
                 src={KVdziewczyny}
                 alt="Szczypiornistka zespołu UKS wykonująca rzut"
