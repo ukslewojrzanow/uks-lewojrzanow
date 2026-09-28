@@ -43,7 +43,7 @@ async function page() {
             src={KVdruzyny}
             alt="Drużyny zespołu UKS Rusiec"
             fill
-            className="object-cover object-top -z-10 "
+            className="object-cover object-top -z-10"
           />
         </section>
       </FadeIn>

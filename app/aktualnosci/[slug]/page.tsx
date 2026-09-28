@@ -64,26 +64,30 @@ export default async function PostPage({
           ← Wróć do aktualności
         </Link>
       </div>
-      <div className="flex  gap-10 w-fit h-fit">
+      <div className="flex gap-10 w-fit h-fit max-sm:flex-col">
         {postImageUrl && (
-          <Image
-            src={postImageUrl}
-            alt={post.title}
-            width={post.image.asset.metadata.dimensions.width}
-            height={post.image.asset.metadata.dimensions.height}
-            quality={100}
-            className="max-h-[600px] w-auto"
-          />
+          <div className="w-full h-full">
+            <Image
+              src={postImageUrl}
+              alt={post.title}
+              width={post.image.asset.metadata.dimensions.width}
+              height={post.image.asset.metadata.dimensions.height}
+              quality={100}
+              className="max-h-[600px] w-auto"
+            />
+          </div>
         )}
         {postImageUrl2 && (
-          <Image
-            src={postImageUrl2}
-            alt={post.title}
-            width={post.image.asset.metadata.dimensions.width}
-            height={post.image.asset.metadata.dimensions.height}
-            quality={100}
-            className="max-h-[600px] w-auto"
-          />
+          <div className="w-full h-full">
+            <Image
+              src={postImageUrl2}
+              alt={post.title}
+              width={post.image.asset.metadata.dimensions.width}
+              height={post.image.asset.metadata.dimensions.height}
+              quality={100}
+              className="max-h-[600px] w-auto"
+            />
+          </div>
         )}
       </div>
 
