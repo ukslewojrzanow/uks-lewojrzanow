@@ -41,7 +41,7 @@ async function page() {
           <h1 className="text-center hero_h1-long">Aktualności</h1>
           <Image
             src={KVdruzyny}
-            alt="Drużyny zespołu UKS Rusiec"
+            alt="Drużyny zespołu UKS Ojrzanów"
             fill
             className="object-cover object-top -z-10"
           />

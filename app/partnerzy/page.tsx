@@ -8,7 +8,9 @@ import Zabia from "@/public/Icon_zabia.png";
 import Wmzpr from "@/public/icon-wmzpr.png";
 import Icontk from "@/public/Icon_tk.png";
 import Iconfego from "@/public/Icon_fego.png";
-import IconSart from "@/public/Icon_Sart.png";
+import IconDaniel from "@/public/rep-daniel.png";
+import IconVienna from "@/public/rep-vienna.png";
+import IconInter from "@/public/rep-inter.png";
 import Iconnn from "@/public/Icon_nn.png";
 import IconVerk from "@/public/Icon_Verk.png";
 import Link from "next/link";
@@ -25,7 +27,7 @@ function page() {
           <h1 className="text-center">Partnerzy</h1>
           <Image
             src={KVdruzyny}
-            alt="Drużyny zespołu UKS Rusiec"
+            alt="Drużyny zespołu UKS Ojrzanów"
             fill
             className="object-cover object-top -z-10 "
           />
@@ -95,16 +97,11 @@ function page() {
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
-              <Link
-                href="https://www.facebook.com/SARTreklama"
-                title="Przejdź do SART s.c."
-              >
-                <Image
-                  src={IconSart}
-                  className="parnetrs-img"
-                  alt="Logo Partnera Daniel Śliwiński Premium Finance"
-                />
-              </Link>
+              <Image
+                src={IconDaniel}
+                className="parnetrs-img"
+                alt="Logo Partnera Daniel Śliwiński Premium Finance"
+              />
               <h3 className="section_h3 text-center self-center">
                 Daniel Śliwiński Premium Finance
               </h3>
@@ -155,6 +152,38 @@ function page() {
               </Link>
               <h3 className="section_h3 text-center self-center">
                 Nieszablonowa Agnieszka Dylak
+              </h3>
+            </div>
+
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
+              <Link
+                href="http://www.nieszablonowa.pl/"
+                title="Przejdź do Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
+              >
+                <Image
+                  src={IconVienna}
+                  className="parnetrs-img"
+                  alt="Logo Partnera Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
+                />
+              </Link>
+              <h3 className="section_h3 text-center self-center">
+                Vienna Life <br></br>Towarzystwo Ubezpieczeń na Życie S.A.
+              </h3>
+            </div>
+
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
+              <Link
+                href="https://interrisk.pl/"
+                title="Przejdź do InterRisk TU S.A. Vienna Insurance Group"
+              >
+                <Image
+                  src={IconInter}
+                  className="parnetrs-img"
+                  alt="Logo Partnera InterRisk TU S.A. Vienna Insurance Group"
+                />
+              </Link>
+              <h3 className="section_h3 text-center self-center">
+                InterRisk TU S.A. Vienna Insurance Group
               </h3>
             </div>
           </div>

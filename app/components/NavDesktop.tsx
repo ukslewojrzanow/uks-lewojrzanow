@@ -44,6 +44,18 @@ function NavDesktop() {
       </li>
       <li>
         <Link
+          href="/trenerzy"
+          className={`${
+            pathname === "/trenerzy"
+              ? "nav_underline"
+              : "opacity-80 hover:opacity-100 transition-opacity duration-300"
+          }`}
+        >
+          Trenerzy
+        </Link>
+      </li>
+      <li>
+        <Link
           href="/partnerzy"
           className={`${
             pathname === "/partnerzy"

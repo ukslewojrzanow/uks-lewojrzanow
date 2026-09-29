@@ -17,7 +17,7 @@ function page() {
           <h1 className="text-center">Kontakt</h1>
           <Image
             src={KVdruzyny}
-            alt="Drużyny zespołu UKS Rusiec"
+            alt="Drużyny zespołu UKS Ojrzanów"
             fill
             className="object-cover object-top -z-10 "
           />

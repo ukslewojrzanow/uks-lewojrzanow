@@ -50,6 +50,14 @@ function NavMobile() {
             </li>
             <li>
               <Link
+                href="/trenerzy"
+                className={`${pathname === "/trenerzy" && "mob-nav_underline "}`}
+              >
+                Trenerzy
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/partnerzy"
                 className={`${pathname === "/partnerzy" && "mob-nav_underline "}`}
               >

@@ -24,7 +24,7 @@ function MainTeams() {
                 Nasze drużyny - jedna pasja, jeden cel
               </h3>
               <p>
-                UKS Rusiec to nie tylko klub - to rodzina! Od młodych talentów
+                UKS Ojrzanów to nie tylko klub - to rodzina! Od młodych talentów
                 po doświadczonych zawodników - nasze drużyny to duma UKS Lew
                 Ojrzanów. Poznaj nasze sekcje męskie i żeńskie, zobacz kto gra z
                 sercem i zostawia wszystko na boisku.

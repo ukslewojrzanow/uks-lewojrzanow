@@ -40,7 +40,7 @@ async function MainNews() {
             <div className="home_news-textbox">
               <h3 className="section_h3">Najnowsze z boiska!</h3>
               <p>
-                Nie przegap tego, co dzieje się w UKS Lew Ojrznaów - mecze,
+                Nie przegap tego, co dzieje się w UKS Lew Ojrzanów - mecze,
                 wyniki, wydarzenia i kulisy klubu! Sprawdź najnowsze aktualności
                 i bądź na bieżąco z naszymi sukcesami.
               </p>

@@ -20,8 +20,8 @@ function page() {
           <h1 className="text-center">Drużyny</h1>
           <Image
             src={KVdruzyny}
-            alt="Drużyny zespołu UKS Rusiec"
-            title="Drużyny zespołu UKS Rusiec"
+            alt="Drużyny zespołu UKS Lew Ojrzanów"
+            title="Drużyny zespołu UKS Lew Ojrzanów"
             fill
             className="object-cover object-top -z-10 "
           />
@@ -47,7 +47,7 @@ function page() {
           <Link
             href="/druzyny/klasy-1-3"
             className="overflow-hidden"
-            title="Przejdź do drużyny chłopców"
+            title="Przejdź do drużyny Akademii zRęcznego Lwiątka"
           >
             <div className="page_teams-team boys relative">
               <div>
@@ -60,7 +60,7 @@ function page() {
               <Image
                 src={KVchlopaki}
                 alt="Szczypiornista zespołu UKS wykonujący rzut"
-                title="Drużyna chłopców"
+                title="Drużyna Akademii zRęcznego Lwiątka"
                 fill
                 className="object-cover object-top -z-10"
               />
@@ -69,7 +69,7 @@ function page() {
           <Link
             href="/druzyny/klasy-4-5"
             className="overflow-hidden"
-            title="Przejdź do drużyny dziewcząt"
+            title="Przejdź do drużyny Akademii zRęcznego Lwa"
           >
             <div className="page_teams-team girls relative">
               <div>
@@ -80,7 +80,7 @@ function page() {
               <Image
                 src={KVdziewczyny}
                 alt="Szczypiornistka zespołu UKS wykonująca rzut"
-                title="Drużyna dziewcząt"
+                title="Drużyna Akademii zRęcznego Lwa"
                 fill
                 className="object-cover object-top -z-10"
               />

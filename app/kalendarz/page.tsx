@@ -20,13 +20,13 @@ async function page() {
   const events = await client.fetch<SanityDocument[]>(
     EVENTS_QUERY,
     {},
-    options
+    options,
   );
 
   return (
     <section className="min-h-[95vh]">
       <div className="container calendar-page">
-        <h1 className="section_h2">Kalendarz UKS Rusiec</h1>
+        <h1 className="section_h2">Kalendarz UKS Lew Ojrzanów</h1>
         <ul className="calendar-page-list">
           {events.map((event) => (
             <FadeIn key={event._id}>

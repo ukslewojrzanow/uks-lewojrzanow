@@ -53,7 +53,7 @@ export default function MainHero() {
       </div>
       <Image
         src={currentKV}
-        alt="Drużyna chłopców UKS Rusiec z dyplomami i pucharami"
+        alt="Drużyna chłopców UKS Lew Ojrzanów z dyplomami i pucharami"
         fill
         className="transition-all duration-300 w-[50%] h-[50%] z-[-5] opacity-10 object-center object-cover"
         style={{ opacity: `${opacity}` }}
