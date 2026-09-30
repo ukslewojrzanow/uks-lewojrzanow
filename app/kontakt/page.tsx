@@ -3,7 +3,6 @@ import FadeIn from "../UI/FadeIn";
 import Image from "next/image";
 import MainPartners from "../components/MainPartners";
 import MainSocial from "../components/MainSocial";
-import FadeDelay from "../UI/FadeDelay";
 import Map from "../components/GoogleMaps";
 
 export const metadata = {

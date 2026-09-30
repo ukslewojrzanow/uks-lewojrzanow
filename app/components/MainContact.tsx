@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ScrollUp from "../UI/ScrollUp";
 import IMGicon from "@/public/ukslogo.png";
-import FadeDelay from "../UI/FadeDelay";
 import Map from "./GoogleMaps";
 
 function MainContact() {
