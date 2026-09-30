@@ -1256,3 +1256,39 @@ p {
 .trainer-box p {
   margin-bottom: 1rem;
 }
+
+/* Cookies */
+
+.bg-cookies {
+  padding: 3.2rem;
+  background-color: var(--background-color);
+}
+
+.cookiesBtn1 {
+  background-color: var(--accent-green-dark);
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cookiesBtn2 {
+  background-color: var(--font-color);
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--background-color);
+  transition: all 0.3s;
+}
+.cookiesBtn3 {
+  border: 0.2rem solid var(--accent-green-dark);
+  padding: 1rem 2.4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--accent-green-dark);
+  transition: all 0.3s;
+}
+.cookiesBtn1:hover,
+.cookiesBtn2:hover,
+.cookiesBtn3:hover {
+  opacity: 0.8;
+}

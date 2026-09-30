@@ -6,6 +6,9 @@ import { ThemeProvider } from "./context/ThemeContext";
 import HeaderReveal from "./components/HeaderReveal";
 import Footer from "./components/Footer";
 import SocialsAside from "./components/SocialsAside";
+import { CookieProvider } from "./context/CookieContext";
+import CookieBanner from "./components/CookieBanner";
+import CookieSettingsButton from "./components/CookieButton";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -38,14 +41,17 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.variable} antialiased `}>
         <ThemeProvider>
-          <HeaderReveal>
-            <Navigation />
-          </HeaderReveal>
-          {children}
+          <CookieProvider>
+            <HeaderReveal>
+              <Navigation />
+            </HeaderReveal>
+            {children}
+            <CookieBanner />
+            <CookieSettingsButton />
+            <Footer />
 
-          <Footer />
-
-          <SocialsAside />
+            <SocialsAside />
+          </CookieProvider>
         </ThemeProvider>
       </body>
     </html>
