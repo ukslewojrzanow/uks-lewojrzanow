@@ -57,7 +57,7 @@ export const CookieProvider = ({ children }: { children: React.ReactNode }) => {
     });
 
     setShowBanner(false);
-    setManuallyOpened(false);
+    setManuallyOpened(manuallyOpened === false);
   };
 
   const declineAll = () => {
@@ -77,8 +77,8 @@ export const CookieProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   const openSettings = () => {
-    setManuallyOpened(true);
-    setShowBanner(true);
+    setManuallyOpened(!manuallyOpened);
+    setShowBanner(!showBanner);
   };
 
   const closeBanner = () => {
