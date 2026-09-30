@@ -1,12 +1,10 @@
 "use client";
 
-import IMGCallendar from "@/public/calendaricon.png";
-import Image from "next/image";
-
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Link from "next/link";
+import { FaCalendarAlt } from "react-icons/fa";
 
 type Event = {
   _id: string;
@@ -32,7 +30,7 @@ export default function SanityCalendar({ events }: Props) {
       acc[dateKey].push(event);
       return acc;
     },
-    {} as Record<string, Event[]>
+    {} as Record<string, Event[]>,
   );
 
   const tileClassName = ({ date }: { date: Date }) => {
@@ -47,7 +45,7 @@ export default function SanityCalendar({ events }: Props) {
       : [];
 
   const handleDateChange = (
-    value: Date | [Date | null, Date | null] | null
+    value: Date | [Date | null, Date | null] | null,
   ) => {
     if (value instanceof Date) {
       setSelectedDate(value);
@@ -61,13 +59,17 @@ export default function SanityCalendar({ events }: Props) {
   return (
     <>
       <div>
-        <Image
+        <FaCalendarAlt
+          className="callendar_icon "
+          onClick={() => setIsOpen(!isOpen)}
+        />
+        {/* <Image
           src={IMGCallendar}
           alt="Ikona Kalendarza"
           title="Kalendarz"
           className="callendar_icon "
           onClick={() => setIsOpen(!isOpen)}
-        />
+        /> */}
       </div>
       {isOpen && (
         <div className="calendar-box">

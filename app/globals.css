@@ -258,13 +258,22 @@ p {
   transform: translateY(-50%);
 }
 
-.socials_aside img {
+/* .socials_aside img {
   transition: all 0.3s;
-  filter: grayscale(100) brightness(1.4);
+  filter: grayscale(100) brightness(1);
 }
 .socials_aside img:hover {
   transform: translateX(-0.2rem);
-  filter: grayscale(100) brightness(1.8);
+  filter: grayscale(100) brightness(1.2);
+} */
+.socials_aside svg {
+  transition: all 0.3s;
+  width: auto;
+  height: 3.2rem;
+}
+.socials_aside svg:hover {
+  transform: translateX(-0.2rem);
+  opacity: 0.8;
 }
 
 /* ************* NAVIGATION  ************** */

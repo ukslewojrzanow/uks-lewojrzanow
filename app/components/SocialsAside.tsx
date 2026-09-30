@@ -1,10 +1,10 @@
-import IMGinsta from "@/public/instagramLogo.png";
-import IMGface from "@/public/facebookLogo.png";
 import Link from "next/link";
-import Image from "next/image";
+
 import FadeDelay from "../UI/FadeDelay";
 
 import Calendar from "./Calendar";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 
 function SocialsAside() {
   return (
@@ -22,11 +22,7 @@ function SocialsAside() {
               target="_blank"
               title="Odwiedź nasz FaceBook"
             >
-              <Image
-                src={IMGface}
-                alt="FaceBook Logo"
-                title="Odwiedź nasz FaceBook"
-              />
+              <FaFacebook />
             </Link>
           </li>
         </FadeDelay>
@@ -37,11 +33,7 @@ function SocialsAside() {
               target="_blank"
               title="Odwiedź nasz Instagram"
             >
-              <Image
-                src={IMGinsta}
-                alt="Instagram Logo"
-                title="Odwiedź nasz Instagram"
-              />
+              <RiInstagramFill />
             </Link>
           </li>
         </FadeDelay>
