@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Avatar from "@/public/player-boy.png";
+import Avatar2 from "@/public/player-girl.png";
 import { useState } from "react";
 import { urlFor } from "@/sanity/client";
 
@@ -40,7 +41,6 @@ function MapBoys({ players }: Props) {
   if (isDivision !== "Wszyscy") {
     players = players.filter((player) => player.division === isDivision);
   }
-  console.log(players);
 
   return (
     <div className="playersmap_section">
@@ -106,7 +106,7 @@ function MapBoys({ players }: Props) {
                     />
                   ) : (
                     <Image
-                      src={Avatar}
+                      src={player.gender === "chlopak" ? Avatar : Avatar2}
                       width={300}
                       height={300}
                       alt="Domyślny Avatar"
