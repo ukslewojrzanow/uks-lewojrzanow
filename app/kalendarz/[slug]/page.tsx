@@ -18,7 +18,7 @@ export default async function EventPage({
   const event = await client.fetch<SanityDocument>(
     EVENT_QUERY,
     await params,
-    options
+    options,
   );
 
   return (
@@ -33,7 +33,7 @@ export default async function EventPage({
           <h2 className="section_h2">{event.title}</h2>
           <div className="prose">
             <h3 className="section_h4">
-              {new Date(event.date).toLocaleDateString()}
+              {new Date(event.date).toLocaleDateString("pl-PL")}
             </h3>
             <p>{event.description}</p>
             <h4 className="section_h3">Lokalizacja: {event.location}</h4>

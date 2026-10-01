@@ -33,7 +33,7 @@ async function page() {
               <li className="hover:underline" key={event._id}>
                 <Link href={`/kalendarz/${event.slug.current}`}>
                   <p>*{event.title}</p>
-                  <p>{new Date(event.date).toLocaleDateString()}</p>
+                  <p>{new Date(event.date).toLocaleDateString("pl-PL")}</p>
                 </Link>
               </li>
             </FadeIn>
