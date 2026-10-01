@@ -156,16 +156,12 @@ function page() {
             </div>
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
-              <Link
-                href="http://www.nieszablonowa.pl/"
-                title="Przejdź do Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
-              >
-                <Image
-                  src={IconVienna}
-                  className="parnetrs-img"
-                  alt="Logo Partnera Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
-                />
-              </Link>
+              <Image
+                src={IconVienna}
+                className="parnetrs-img"
+                alt="Logo Partnera Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
+              />
+
               <h3 className="section_h3 text-center self-center">
                 Vienna Life <br></br>Towarzystwo Ubezpieczeń na Życie S.A.
               </h3>
