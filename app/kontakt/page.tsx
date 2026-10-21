@@ -89,6 +89,24 @@ function page() {
                 </li>
               </ul>
             </div>
+            <div className="contact-team-detail-box">
+              <h3 className="section_h3">
+                Tomasz Werbicki{" "}
+                <span className="text-[14px] tracking-wide opacity-80">
+                  - Sekretarz
+                </span>
+              </h3>
+              <ul className="contact-ul">
+                <li>
+                  <div>
+                    <p>
+                      <span className="font-semibold opacity-80">Telefon:</span>{" "}
+                      790 224 039
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </FadeIn>
         </div>
       </section>

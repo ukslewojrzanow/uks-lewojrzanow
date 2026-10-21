@@ -13,6 +13,7 @@ import IconVienna from "@/public/rep-vienna.png";
 import IconInter from "@/public/rep-inter.png";
 import Iconnn from "@/public/Icon_nn.png";
 import IconVerk from "@/public/Icon_Verk.png";
+import IconArch from "@/public/architektlogo.jpg";
 import Link from "next/link";
 
 export const metadata = {
@@ -38,6 +39,33 @@ function page() {
         <div className="container">
           <h2 className="section_h2">Nasi Partnerzy</h2>
           <div className="grid min-lg:grid-cols-2 gap-20 partners-box content-center">
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
+              <Image
+                src={IconVienna}
+                className="parnetrs-img"
+                alt="Logo Partnera Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
+              />
+
+              <h3 className="section_h3 text-center self-center">
+                Vienna Life <br></br>Towarzystwo Ubezpieczeń na Życie S.A.
+              </h3>
+            </div>
+
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
+              <Link
+                href="https://interrisk.pl/"
+                title="Przejdź do InterRisk TU S.A. Vienna Insurance Group"
+              >
+                <Image
+                  src={IconInter}
+                  className="parnetrs-img"
+                  alt="Logo Partnera InterRisk TU S.A. Vienna Insurance Group"
+                />
+              </Link>
+              <h3 className="section_h3 text-center self-center">
+                InterRisk TU S.A. Vienna Insurance Group
+              </h3>
+            </div>
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Link
                 href="https://spojrzanow.pl/"
@@ -157,29 +185,13 @@ function page() {
 
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image
-                src={IconVienna}
+                src={IconArch}
                 className="parnetrs-img"
-                alt="Logo Partnera Vienna Life Towarzystwo Ubezpieczeń na Życie S.A."
+                alt="Logo Partnera IT Architekt Kamil Śliwiński"
               />
 
               <h3 className="section_h3 text-center self-center">
-                Vienna Life <br></br>Towarzystwo Ubezpieczeń na Życie S.A.
-              </h3>
-            </div>
-
-            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
-              <Link
-                href="https://interrisk.pl/"
-                title="Przejdź do InterRisk TU S.A. Vienna Insurance Group"
-              >
-                <Image
-                  src={IconInter}
-                  className="parnetrs-img"
-                  alt="Logo Partnera InterRisk TU S.A. Vienna Insurance Group"
-                />
-              </Link>
-              <h3 className="section_h3 text-center self-center">
-                InterRisk TU S.A. Vienna Insurance Group
+                IT Architekt Kamil Śliwiński
               </h3>
             </div>
           </div>

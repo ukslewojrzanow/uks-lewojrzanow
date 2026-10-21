@@ -37,55 +37,53 @@ function page() {
             tego, czy kibicujesz chłopakom czy dziewczynom - tu znajdziesz
             sportowe emocje, sukcesy i prawdziwego ducha rywalizacji.
           </p>
-          <h3 className="section_h3">
+          {/* <h3 className="section_h3">
             Wybierz drużynę i zobacz, kto gra z sercem dla UKS Lew Ojrzanów!
-          </h3>
+          </h3> */}
         </section>
       </ScrollUp>
       <FadeIn>
         <section className="page_teams-teamsbox">
-          <Link
+          {/* <Link
             href="/druzyny/klasy-1-3"
             className="overflow-hidden"
             title="Przejdź do drużyny Akademii zRęcznego Lwiątka"
-          >
-            <div className="page_teams-team boys relative">
-              <div>
-                <p className="pageToTeam_link text-center">Akademia</p>
-                <p className="pageToTeam_link text-center">
-                  zRęcznego Lwiątkia
-                </p>
-                <p className="text-center">Dzieci klas I-III</p>
-              </div>
-              <Image
-                src={KVchlopaki}
-                alt="Szczypiornista zespołu UKS wykonujący rzut"
-                title="Drużyna Akademii zRęcznego Lwiątka"
-                fill
-                className="object-cover object-top -z-10"
-              />
+          > */}
+          <div className="page_teams-team boys relative">
+            <div>
+              <p className="pageToTeam_link text-center">Akademia</p>
+              <p className="pageToTeam_link text-center">zRęcznego Lwiątkia</p>
+              <p className="text-center">Dzieci klas I-III</p>
             </div>
-          </Link>
-          <Link
+            <Image
+              src={KVchlopaki}
+              alt="Szczypiornista zespołu UKS wykonujący rzut"
+              title="Drużyna Akademii zRęcznego Lwiątka"
+              fill
+              className="object-cover object-top -z-10"
+            />
+          </div>
+          {/* </Link> */}
+          {/* <Link
             href="/druzyny/klasy-4-5"
             className="overflow-hidden"
             title="Przejdź do drużyny Akademii zRęcznego Lwa"
-          >
-            <div className="page_teams-team girls relative">
-              <div>
-                <p className="pageToTeam_link text-center">Akademia</p>
-                <p className="pageToTeam_link text-center">zRęcznego Lwa</p>
-                <p className="text-center">Dzieci klas IV-V</p>
-              </div>
-              <Image
-                src={KVdziewczyny}
-                alt="Szczypiornistka zespołu UKS wykonująca rzut"
-                title="Drużyna Akademii zRęcznego Lwa"
-                fill
-                className="object-cover object-top -z-10"
-              />
+          > */}
+          <div className="page_teams-team girls relative">
+            <div>
+              <p className="pageToTeam_link text-center">Akademia</p>
+              <p className="pageToTeam_link text-center">zRęcznego Lwa</p>
+              <p className="text-center">Dzieci klas IV-V</p>
             </div>
-          </Link>
+            <Image
+              src={KVdziewczyny}
+              alt="Szczypiornistka zespołu UKS wykonująca rzut"
+              title="Drużyna Akademii zRęcznego Lwa"
+              fill
+              className="object-cover object-top -z-10"
+            />
+          </div>
+          {/* </Link> */}
         </section>
       </FadeIn>
 

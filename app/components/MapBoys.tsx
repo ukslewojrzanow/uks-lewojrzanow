@@ -44,7 +44,10 @@ function MapBoys({ players }: Props) {
 
   return (
     <div className="playersmap_section">
-      <div className="container min-h-[80vh]">
+      <div className="team_divisions min-h-[60vh] grid items-center">
+        <h2 className="section_h2 text-center">Wkrótce</h2>
+      </div>
+      <div className="container min-h-[80vh] hidden">
         <div className="team_divisions ">
           <h2 className="section_h2">Dywizje:</h2>
           <div className="team_division-box">
