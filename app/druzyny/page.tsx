@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import KVdruzyny from "@/public/bg-teams.jpg";
 import KVchlopaki from "@/public/bg-boy.jpg";
 import KVdziewczyny from "@/public/bg-girl.jpg";
