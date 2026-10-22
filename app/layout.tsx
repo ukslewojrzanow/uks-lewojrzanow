@@ -22,7 +22,7 @@ export const metadata = {
     default: "Witaj / UKS Lew Ojrzanów",
   },
   description:
-    "Ceryfikowana Akademia Piłki Ręcznej ZPRP, Ośrodek Szkolenia w piłce ręcznej OSPR dziewcząt, Handball Team, Athletic Team",
+    "UKS LEW OJRZANÓW, Klub Sportowy szkolący dzieci i młodzież w piłce ręcznej, GRAJ. BAW SIĘ. ROŚNIJ Z NAMI!",
 };
 
 export default function RootLayout({
