@@ -9,6 +9,7 @@ import Wmzpr from "@/public/icon-wmzpr.png";
 import Icontk from "@/public/Icon_tk.png";
 import Iconfego from "@/public/Icon_fego.png";
 import IconDaniel from "@/public/rep-daniel.png";
+import IconModernTown from "@/public/Icon_moderntown.png";
 import IconVienna from "@/public/rep-vienna.png";
 import IconInter from "@/public/rep-inter.png";
 import Iconnn from "@/public/Icon_nn.png";
@@ -127,6 +128,16 @@ function page() {
               </h3>
             </div>
 
+            <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
+              <Image
+                src={IconModernTown}
+                className="parnetrs-img"
+                alt="Logo Partnera Modern Town Biuro Nieruchomości"
+              />
+              <h3 className="section_h3 text-center self-center">
+                Modern Town Biuro Nieruchomości
+              </h3>
+            </div>
             <div className="flex max-[768px]:flex-col gap-8 min-lg:flex-col self-center items-center">
               <Image
                 src={IconDaniel}

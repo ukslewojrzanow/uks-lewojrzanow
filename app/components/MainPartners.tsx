@@ -55,6 +55,7 @@ import IconDaniel from "@/public/rep-daniel.png";
 import IconVienna from "@/public/rep-vienna.png";
 import IconInter from "@/public/rep-inter.png";
 import IconArch from "@/public/architektlogo.jpg";
+import IconModern from "@/public/Icon_moderntown.png";
 
 import FadeIn from "../UI/FadeIn";
 
@@ -77,6 +78,7 @@ function MainPartners() {
     { src: IconVienna, className: "rounded-full" },
     { src: IconInter, className: "rounded-full" },
     { src: IconArch, className: "rounded-full" },
+    { src: IconModern, className: "rounded-full" },
   ];
 
   return (
