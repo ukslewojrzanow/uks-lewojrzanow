@@ -14,6 +14,9 @@ const options = { next: { revalidate: 30 } };
 
 export const metadata = {
   title: "Kalendarz",
+  alternates: {
+    canonical: "/kalendarz",
+  },
 };
 
 async function page() {

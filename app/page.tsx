@@ -6,6 +6,12 @@ import MainTeams from "./components/MainTeams";
 import MainContact from "./components/MainContact";
 import MainSocial from "./components/MainSocial";
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <>

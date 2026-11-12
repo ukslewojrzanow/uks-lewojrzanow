@@ -6,9 +6,20 @@ const EVENT_QUERY = `*[_type == "event" && slug.current == $slug][0]`;
 
 const options = { next: { revalidate: 30 } };
 
-export const metadata = {
-  title: "Kalendarz",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  return {
+    title: "Kalendarz",
+    alternates: {
+      canonical: `/kalendarz/${slug}`,
+    },
+  };
+}
 
 export default async function EventPage({
   params,

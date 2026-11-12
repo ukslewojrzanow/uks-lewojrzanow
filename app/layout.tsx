@@ -23,6 +23,7 @@ export const metadata = {
   },
   description:
     "UKS LEW OJRZANÓW, Klub Sportowy szkolący dzieci i młodzież w piłce ręcznej, GRAJ. BAW SIĘ. ROŚNIJ Z NAMI!",
+  metadataBase: new URL("https://www.ukslewojrzanow.pl"),
 };
 
 export default function RootLayout({

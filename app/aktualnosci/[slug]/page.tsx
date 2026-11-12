@@ -35,9 +35,20 @@ const urlFor = (source: SanityImageSource) =>
 
 const options = { next: { revalidate: 30 } };
 
-export const metadata = {
-  title: "Aktualności",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  return {
+    title: "Aktualności",
+    alternates: {
+      canonical: `/aktualnosci/${slug}`,
+    },
+  };
+}
 
 export default async function PostPage({
   params,

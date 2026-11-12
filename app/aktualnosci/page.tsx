@@ -23,6 +23,9 @@ const options = { next: { revalidate: 30 } };
 
 export const metadata = {
   title: "Aktualności",
+  alternates: {
+    canonical: "/aktualnosci",
+  },
 };
 
 async function page() {

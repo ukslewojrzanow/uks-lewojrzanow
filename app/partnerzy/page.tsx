@@ -18,6 +18,9 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Partnerzy",
+  alternates: {
+    canonical: "/partnerzy",
+  },
 };
 
 function page() {

@@ -10,6 +10,9 @@ import ScrollUp from "../UI/ScrollUp";
 
 export const metadata = {
   title: "Drużyny",
+  alternates: {
+    canonical: "/druzyny",
+  },
 };
 
 function page() {

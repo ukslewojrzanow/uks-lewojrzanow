@@ -6,6 +6,9 @@ import MainPartners from "../components/MainPartners";
 
 export const metadata = {
   title: "Trenerzy",
+  alternates: {
+    canonical: "/trenerzy",
+  },
 };
 
 function page() {

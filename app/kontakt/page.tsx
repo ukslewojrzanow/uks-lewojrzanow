@@ -7,6 +7,9 @@ import Map from "../components/GoogleMaps";
 
 export const metadata = {
   title: "Kontakt",
+  alternates: {
+    canonical: "/kontakt",
+  },
 };
 
 function page() {
